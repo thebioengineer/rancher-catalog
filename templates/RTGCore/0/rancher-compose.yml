@@ -9,3 +9,6 @@
       type: "int"
       default: 32751
       required: true
+
+RTG-Core:
+  scale: 1
