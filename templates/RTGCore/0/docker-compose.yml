@@ -1,6 +1,6 @@
 RTG-Core:
   ports:
-  - 32751:3000/tcp
+  - ${RTGCORE_PORT}:3000/tcp
   labels:
     io.rancher.container.pull_image: always
   tty: true
