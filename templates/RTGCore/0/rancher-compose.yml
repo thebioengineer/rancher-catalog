@@ -1,7 +1,6 @@
   name: "RTG Core"
   version: "v0.1-rtg"
   description: "RealTime Genomics Core Tools with snpEff. Requires at least Rancher version 0.44.0"
-  uuid: rtgcore-0
   minimum_rancher_version: v0.44.0
   questions:
     - variable: "RTGCORE_PORT"
