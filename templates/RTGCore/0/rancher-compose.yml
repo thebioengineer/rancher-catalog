@@ -1,4 +1,4 @@
-  name: "RTG Core"
+  name: "RTGCore and snpEff"
   version: "v0.1-rtg"
   description: "RealTime Genomics Core Tools with snpEff. Requires at least Rancher version 0.44.0"
   minimum_rancher_version: v0.44.0
