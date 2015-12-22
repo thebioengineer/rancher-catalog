@@ -2,5 +2,5 @@
 
 cd $(dirname $0)/..
 
-./scripts/bootstrap
+./scripts/bootstrapAxio
 ./scripts/test
