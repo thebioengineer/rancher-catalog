@@ -1,0 +1,15 @@
+.catalog:
+  name: "RStudio with Microarray Packages"
+  version: "v0.1-microarray"
+  description: "RStudio session with Microarray tagged packages installed"
+  uuid: microarray-0
+  questions:
+    - variable: "AXIO_PORT"
+      label: "External Port"
+      description: "Port at which you will access terminal on web page."
+      type: "int"
+      default: 32701
+      required: true
+
+microarray:
+  scale: 1
