@@ -8,7 +8,7 @@
       label: "External Port"
       description: "Port at which you will access terminal on web page."
       type: "int"
-      default: 32701
+      default: 32726
       required: true
 
 sequencing:
