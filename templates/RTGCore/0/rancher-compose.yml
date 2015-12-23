@@ -2,6 +2,7 @@
   name: "RTGCore and snpEff"
   version: "v0.1-rtg"
   description: "RealTime Genomics Core Tools with snpEff."
+  uuid: rtgcore-0
   questions:
     - variable: "RTGCORE_PORT"
       label: "External Port"
