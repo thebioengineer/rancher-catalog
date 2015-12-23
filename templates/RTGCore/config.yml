@@ -2,4 +2,4 @@ name: RTGCore and snpEff
 description: |
   RealTime Genomics Core Tools with snpEff
 version: v0.1-rtg
-category: "RTG Services"
+category: "RTG services"
