@@ -1,0 +1,15 @@
+wetty:
+  image: nathanleclaire/wetty:latest
+  environment:
+    AXIO_PORT: ${AXIO_PORT}
+  ports:
+  - ${AXIO_PORT}:3000/tcp
+  labels:
+    io.rancher.container.pull_image: always
+  tty: true
+  hostname: axiohost13
+  volumes:
+  - /Projects/BIGdata:/data:rw
+  - /home/dnadave/q/Shared/StatGen:/statgen:rw
+  stdin_open: true
+  net: bridge
