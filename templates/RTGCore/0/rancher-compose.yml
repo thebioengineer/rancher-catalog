@@ -10,4 +10,10 @@
       required: true
 
 RTG-Core:
-  scale: 1
+  health_check:
+    port: 1000
+    interval: 2000
+    unhealthy_threshold: 3
+    request_line: GET / HTTP/1.0
+    healthy_threshold: 2
+    response_timeout: 2000
