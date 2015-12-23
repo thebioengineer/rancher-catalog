@@ -1,0 +1,21 @@
+.catalog:
+  name: "RStudio with Sequencing Packages"
+  version: "v0.1-sequencing"
+  description: "RStudio session with Sequencing tagged packages installed"
+  uuid: sequencing-0
+  questions:
+    - variable: "AXIO_PORT"
+      label: "External Port"
+      description: "Port at which you will access terminal on web page."
+      type: "int"
+      default: 32701
+      required: true
+
+sequencing:
+  health_check:
+    port: 1000
+    interval: 2000
+    unhealthy_threshold: 3
+    request_line: GET / HTTP/1.0
+    healthy_threshold: 2
+    response_timeout: 2000

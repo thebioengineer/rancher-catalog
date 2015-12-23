@@ -1,0 +1,5 @@
+name: Proteomics
+description: |
+  RStudio session with Proteomics tagged packages installed
+version: v0.1-proteomics
+category: "Axio services"
