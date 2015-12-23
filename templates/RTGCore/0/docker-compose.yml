@@ -1,6 +1,8 @@
-RTG-Core:
+RTGCore:
+  environment:
+    AXIO_PORT: ${AXIO_PORT}
   ports:
-  - ${RTGCORE_PORT}:3000/tcp
+  - ${AXIO_PORT}:3000/tcp
   labels:
     io.rancher.container.pull_image: always
   tty: true

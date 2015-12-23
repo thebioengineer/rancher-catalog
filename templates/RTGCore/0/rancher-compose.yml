@@ -1,3 +1,4 @@
+.catalog:
   name: "RTGCore and snpEff"
   version: "v0.1-rtg"
   description: "RealTime Genomics Core Tools with snpEff."
@@ -9,7 +10,7 @@
       default: 32751
       required: true
 
-RTG-Core:
+RTGCore:
   health_check:
     port: 1000
     interval: 2000
