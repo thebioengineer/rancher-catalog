@@ -1,5 +1,5 @@
 microarray:
-  image: dnadave/release_microarray:dec2015
+  image: dnadave/release_microarray:oct2015
   environment:
     AXIO_PORT: ${AXIO_PORT}
   ports:
