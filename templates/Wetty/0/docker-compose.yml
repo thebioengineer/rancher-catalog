@@ -1,5 +1,5 @@
 wetty:
-  image: nathanleclaire/wetty:latest
+  image: dnadave/wettyr:jan2016
   environment:
     AXIO_PORT: ${AXIO_PORT}
   ports:
