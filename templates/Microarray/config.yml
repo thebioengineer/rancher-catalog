@@ -1,5 +1,5 @@
 name: Microarray
 description: |
   RStudio session with Microarray tagged packages installed
-version: v0.1-microarray
+version: v0.2-jan2016
 category: "Axio services"
