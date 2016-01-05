@@ -1,6 +1,6 @@
 .catalog:
   name: "RStudio with Proteomics Packages"
-  version: "v0.1-oct2015"
+  version: "v0.2-jan2016"
   description: "RStudio session with Proteomics tagged packages installed"
   uuid: proteomics-0
 

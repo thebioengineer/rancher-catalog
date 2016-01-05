@@ -1,9 +1,7 @@
 wetty:
   image: dnadave/wettyr:jan2016
-  environment:
-    AXIO_PORT: ${AXIO_PORT}
   ports:
-  - ${AXIO_PORT}:3000/tcp
+  - :3000/tcp
   labels:
     io.rancher.container.pull_image: always
   tty: true

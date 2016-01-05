@@ -1,5 +1,5 @@
-sequencing:
-  image: dnadave/release_sequencing:oct2015
+microarray:
+  image: dnadave/release_microarray:jan2016
   ports:
   - :8787/tcp
   labels:

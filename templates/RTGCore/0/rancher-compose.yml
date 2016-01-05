@@ -1,19 +1,12 @@
 .catalog:
   name: "RTGCore and snpEff"
-  version: "v0.1-rtg"
+  version: "v0.1-dec2015"
   description: "RealTime Genomics Core Tools with snpEff."
   uuid: rtgcore-0
-  questions:
-    - variable: "AXIO_PORT"
-      label: "External Port"
-      description: "Port at which you will access terminal on web page."
-      type: "int"
-      default: 32751
-      required: true
 
 RTGCore:
   health_check:
-    port: 1000
+    port: 80
     interval: 2000
     unhealthy_threshold: 3
     request_line: GET / HTTP/1.0

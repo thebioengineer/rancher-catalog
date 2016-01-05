@@ -1,6 +1,6 @@
 .catalog:
   name: "RStudio with Sequencing Packages"
-  version: "v0.1-oct2015"
+  version: "v0.2-jan2016"
   description: "RStudio session with Sequencing tagged packages installed"
   uuid: sequencing-0
 
