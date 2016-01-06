@@ -9,6 +9,6 @@ wetty:
     port: 3000
     interval: 2000
     unhealthy_threshold: 3
-    request_line: GET / HTTP/1.0
+    request_line: ''
     healthy_threshold: 2
     response_timeout: 2000
