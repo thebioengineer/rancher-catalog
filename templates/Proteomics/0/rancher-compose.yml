@@ -6,7 +6,7 @@
 
 proteomics:
   health_check:
-    port: 80
+    port: 8787
     interval: 2000
     unhealthy_threshold: 3
     request_line: GET / HTTP/1.0
