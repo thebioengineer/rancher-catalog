@@ -1,0 +1,14 @@
+.catalog:
+  name: "RTGCore and snpEff"
+  version: "v0.2-jan2016"
+  description: "RealTime Genomics Core Tools with snpEff."
+  uuid: rtgcore-0
+
+RTGCore:
+  health_check:
+    port: 3000
+    interval: 2000
+    unhealthy_threshold: 3
+    request_line: GET / HTTP/1.0
+    healthy_threshold: 2
+    response_timeout: 2000
