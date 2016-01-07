@@ -4,11 +4,11 @@
   description: "RStudio session with Microarray tagged packages installed"
   uuid: microarray-0
 
-microarray:
-  health_check:
-    port: 8787
-    interval: 2000
-    unhealthy_threshold: 3
-    request_line: GET / HTTP/1.0
-    healthy_threshold: 2
-    response_timeout: 2000
+#microarray:
+#  health_check:
+#    port: 8787
+#    interval: 2000
+#    unhealthy_threshold: 3
+#    request_line: GET / HTTP/1.0
+#    healthy_threshold: 2
+#    response_timeout: 2000
