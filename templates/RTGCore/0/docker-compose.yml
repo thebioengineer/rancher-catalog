@@ -11,3 +11,4 @@ RTGCore:
   - /home/dnadave/q/Shared/StatGen:/statgen:rw
   stdin_open: true
   net: bridge
+  privileged: true
