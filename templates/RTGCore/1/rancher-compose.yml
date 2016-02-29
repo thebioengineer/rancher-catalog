@@ -1,6 +1,6 @@
 .catalog:
   name: "RTGCore and snpEff"
-  version: "v0.2-jan2016"
+  version: "v0.2-jan2016-validated"
   description: "RealTime Genomics Core Tools with snpEff."
   uuid: rtgcore-0
 
