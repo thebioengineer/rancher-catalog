@@ -1,0 +1,5 @@
+name: ShinyGWAS
+description: |
+  Shiny Server demo using GWAS data
+version: v0.1-mar2016
+category: "Axio services"
