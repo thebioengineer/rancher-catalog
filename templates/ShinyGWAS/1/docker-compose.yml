@@ -1,6 +1,6 @@
 shinygwas:
   image: dnadave/release_shinygwas:apr2016
-  command: service nginx stop ; service nginx stop ; nginx
+  command: sh /app/stopStartNginx.sh
   ports:
   - :80/tcp
   labels:
