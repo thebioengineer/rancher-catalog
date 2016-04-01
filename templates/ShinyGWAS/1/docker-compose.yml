@@ -1,0 +1,14 @@
+shinygwas:
+  image: dnadave/release_shinygwas:apr2016
+  ports:
+  - :3838/tcp
+  labels:
+    io.rancher.container.pull_image: always
+  tty: true
+  hostname: axiohost13
+  volumes:
+  - /Projects/BIGdata:/data:rw
+  - /home/dnadave/q/Shared/StatGen:/statgen:rw
+  stdin_open: true
+  net: bridge
+  privileged: true
