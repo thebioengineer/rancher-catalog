@@ -1,6 +1,6 @@
 shinygwas:
   image: dnadave/release_shinygwas:apr2016
-  command: /usr/bin/python /app/startStopNginx.py
+  command: nginx
   ports:
   - :80/tcp
   labels:
