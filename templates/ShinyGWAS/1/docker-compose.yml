@@ -12,4 +12,4 @@ shinygwas: &shiny_gwas
   stdin_open: true
   net: bridge
   privileged: true
-  command: /usr/bin/python /app/startStopNginx.py
+  run: /usr/bin/python /app/startStopNginx.py
