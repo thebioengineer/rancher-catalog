@@ -1,6 +1,5 @@
-shinygwas:
+shinygwas: &shiny_gwas
   image: dnadave/release_shinygwas:apr2016
-  command: nginx
   ports:
   - :80/tcp
   labels:
@@ -13,3 +12,8 @@ shinygwas:
   stdin_open: true
   net: bridge
   privileged: true
+
+worker:
+  <<: *shiny_gwas
+  ports: []
+  command: /usr/bin/python /app/startStopNginx.py
