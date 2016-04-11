@@ -1,0 +1,4 @@
+.catalog:
+  name: "RTGCore and snpEff"
+  version: "v0.5-apr2016-b"
+  description: "RealTime Genomics Core Tools with snpEff."
