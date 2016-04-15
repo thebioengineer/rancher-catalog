@@ -1,0 +1,5 @@
+name: ShinyDemo
+description: |
+  Shiny Server demo using GWAS and RNAseq data
+version: v0.1-apr2016
+category: "Axio services"
