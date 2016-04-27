@@ -1,0 +1,12 @@
+RTGCore:
+  ports:
+  - :3000/tcp
+  labels:
+    io.rancher.container.pull_image: always
+  hostname: axiohost13
+  image: dnadave/rtg-core:may2016
+  volumes:
+  - /Projects/BIGdata:/data:rw
+  - /home/dnadave/q/Shared/StatGen:/statgen:rw
+  net: bridge
+  privileged: true
