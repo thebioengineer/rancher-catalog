@@ -1,0 +1,14 @@
+.catalog:
+  name: "Shiny Server with GWAS and RNAseq demo"
+  version: "v0.4-jul2016"
+  description: "Shiny server with nginx authentication hosting GWAS and RNAseq demos"
+  uuid: shinydemo-0
+
+#sequencing:
+#  health_check:
+#    port: 80
+#    interval: 2000
+#    unhealthy_threshold: 3
+#    request_line: GET / HTTP/1.0
+#    healthy_threshold: 2
+#    response_timeout: 2000
