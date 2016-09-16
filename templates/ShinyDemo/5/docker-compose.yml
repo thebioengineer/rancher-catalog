@@ -12,8 +12,3 @@ shinygwas:
   stdin_open: true
   net: bridge
   privileged: true
-  links:
-  - shinygwas:shinygwas
-shinydata:
-  tty: true
-  image: dnadave/release_shinydata:sep2016
