@@ -1,5 +1,5 @@
 .catalog:
   name: "Shiny Server with GWAS and RNAseq demo"
-  version: "v0.6-aug2016"
+  version: "v0.7-sep2016"
   description: "Shiny server with nginx authentication hosting GWAS and RNAseq demos"
   uuid: shinydemo-0

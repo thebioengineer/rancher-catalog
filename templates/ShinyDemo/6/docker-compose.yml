@@ -1,5 +1,5 @@
 shinygwas:
-  image: dnadave/release_shinydemo:aug2016
+  image: dnadave/release_shinydemo:sep2016
   ports:
   - :80/tcp
   labels:
