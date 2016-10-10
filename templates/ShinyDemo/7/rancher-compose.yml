@@ -3,3 +3,7 @@
   version: "v0.8-oct2016"
   description: "Shiny server with nginx authentication hosting GWAS and RNAseq demos"
   uuid: shinydemo-0
+  questions:
+    - variable: HOST_PORT
+      label: port
+      description: Port on host for web connection

@@ -1,7 +1,7 @@
 shinygwas:
   image: dnadave/release_shinydemo:oct2016
   ports:
-  - :80/tcp
+  - "${HOST_PORT}:80/tcp"
   labels:
     io.rancher.container.pull_image: always
   tty: true
