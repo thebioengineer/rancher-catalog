@@ -28,7 +28,7 @@ dockerFolder=args.folder
 dockerImage=args.image
 
 #open and figure out the most "current" configuration yml files by looping though files and determining which name is the highest number
-FileDir="rancher-catalog/templates/"+dockerFolder
+FileDir="templates/"+dockerFolder
 CurrentYML="-1"
 for f in os.listdir(FileDir):
 	if os.path.isdir(FileDir+"/"+f):
