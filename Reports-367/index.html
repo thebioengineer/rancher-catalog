@@ -1,0 +1,1627 @@
+<?xml version="1.0" encoding="UTF-8"?><html xmlns:concordion="http://www.concordion.org/2007/concordion">
+<link href="../../../../concordion.css" rel="stylesheet" type="text/css" />
+	<head><style>* {
+  font-family: Arial;
+}
+body {
+  padding: 32px;  
+}
+pre {
+  padding: 6px 28px 6px 28px;
+  background-color: #E8EEF7;
+}
+pre, pre *, code, code *, kbd {
+  font-family: Courier New, Courier;
+  font-size: 10pt;
+}
+h1, h1 * {
+  font-size: 24pt;	
+}
+p, td, th, li, .breadcrumbs {
+  font-size: 10pt;
+}
+p, li {
+  line-height: 140%;
+  max-width: 720px;
+}
+table {
+  border-collapse: collapse;
+  empty-cells: show;
+  margin: 8px 0px 8px 0px;
+}
+th, td {
+  border: 1px solid black;
+  padding: 3px;
+}
+td {
+  background-color: white;
+  vertical-align: top;
+}
+th {
+  background-color: #C3D9FF;
+}
+li {
+  margin-top: 6px;
+  margin-bottom: 6px; 
+}
+
+.example, [concordion\:example] {
+  padding: 6px 16px 6px 16px;
+  border: 1px solid #C3D9FF;
+  margin: 6px 0px 28px 0px;
+  background-color: #F5F9FD;
+}
+.example h3, [concordion\:example] h3 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  font-size: 12pt;
+}
+
+p.success {
+  padding: 2px;
+}
+.success, .success * {
+  background-color: #afa !important;
+}
+.success pre {
+  background-color: #bbffbb;
+}
+.failure, .failure * {
+  background-color: #ffb0b0;
+  padding: 1px;
+}
+.failure .expected {
+  text-decoration: line-through;
+  color: #bb5050;
+}
+.ignored, .ignored * {
+  background-color: #f0f0f0 !important;	
+}
+
+ins {
+  text-decoration: none;	
+}
+
+.exceptionMessage {
+  background-color: #fdd;
+  font-family: Courier New, Courier, Monospace;
+  font-size: 10pt;
+  display: block;
+  font-weight: normal;
+  padding: 4px;
+  text-decoration: none !important;
+}
+.stackTrace, .stackTrace * {
+  font-weight: normal;
+}
+.stackTrace {
+  display: none;
+  padding: 1px 4px 4px 4px;
+  background-color: #fdd;
+  border-top: 1px dotted black;
+}
+.stackTraceExceptionMessage {
+  display: block;
+  font-family: Courier New, Courier, Monospace;
+  font-size: 8pt;
+  white-space: wrap;
+  padding: 1px 0px 1px 0px;
+}
+.stackTraceEntry {
+  white-space: nowrap;
+  font-family: Courier New, Courier, Monospace;
+  display: block;
+  font-size: 8pt;
+  padding: 1px 0px 1px 32px;
+}
+.stackTraceButton {
+  font-size: 8pt;
+  margin: 2px 8px 2px 0px;
+  font-weight: normal;
+  font-family: Arial;
+}
+
+.special {
+  font-style: italic;
+}
+.missing, .missing * {
+  background-color: #ff9999;
+  color:#bb5050;
+  text-decoration: line-through;
+}
+.surplus, .surplus * {
+  background-color: #ff9999;
+}
+.footer {
+  text-align: right;
+  margin-top: 40px;
+  font-size: 8pt;
+  width: 100%;
+  color: #999;
+}
+.footer .testTime {
+  padding: 2px 10px 0px 0px;
+}
+
+.idea {
+  font-size: 9pt;
+  color: #888;
+  font-style: italic;	
+}
+.tight li {
+  margin-top: 1px;
+  margin-bottom: 1px; 
+}
+.commentary {
+  float: right;
+  width: 200px;
+  background-color: #ffffd0;
+  padding:8px;
+  border: 3px solid #eeeeb0;	 
+  margin: 10px 0px 10px 10px;	 
+}
+.commentary, .commentary * {
+  font-size: 8pt;
+}
+</style>
+        	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    	</head>
+	<body>
+	<div concordion:example="WholeSystemValidation" id="WholeSystemValidation">	
+		<h1> Container Validation for RTGWetty Build number: 545</h1>
+		<h4> RTGWetty-test buildnumber: 367</h4>
+		<h4> Container Validation performed: 2017-03-13</h4>
+		<div>
+			<table border="1" style="border-collapse: collapse">
+				<tr>
+					<td colspan="3"><b>System Name:</b> Next Generation Sequencing Pipeline System</td>
+					<td rowspan="4"><b>Test Package Objective:</b><span style="color:red">This test package contains the scripts and commands requires for testing the Next Generation Sequencing Pipeline system. As specified in the NGS01_SRS_1_4.  The tester is assumed to have access to a workstation with a working chrome web browser installed and a login to the Docker Dashboard.</span></td></tr>
+				<tr><td colspan="3"><b>Test Package Name:</b> <span style="color:red">Next Generation Sequencing Pipeline System</span></td></tr>
+				<tr><td colspan="3">	</td></tr>
+				<tr>
+					<td><b>Test Package Author:</b> Sangsoon Woo, Statistical Geneticist</td>
+					<td><b>Signature:</b>______________________________</td>
+					<td><b>Date:</b>_____________</td>
+				</tr>
+				<tr>
+					<td><b>Test Package Approval:</b> David Henderson, Director of Statistical Genetics</td>
+					<td><b>Signature:</b>______________________________</td>
+					<td><b>Date:</b>_____________</td>
+					<td rowspan="4"><b>Test Environment:</b><span style="color:red">The server residing at network address 10.0.252.112 with the Docker Dashboard and Docker installed.  Please provide the following documentation with the completed script or command when required.  Provide screenshots showing results for each test.</span></td>
+				</tr>
+				<tr>
+					<td><b>Tester:</b><span style="color:red">Ellis Hughes</span></td>
+					<td><b>Signature:</b>______________________________</td>
+					<td><b>Date:</b>_____________</td>
+				</tr>
+				<tr>
+					<td><b>Reviewer:</b><span style="color:red"> David Henderson, Director of Statistical Genetics</span></td>
+					<td><b>Signature:</b>______________________________</td>
+					<td><b>Date:</b>_____________</td>
+				</tr>
+				<tr>
+					<td><b>QA:</b><span style="color:red">Josh Sanders, QA Manager</span></td>
+					<td><b>Signature:</b>______________________________</td>
+					<td><b>Date:</b>_____________</td>
+				</tr>
+			</table>
+		</div>
+		
+		<div>
+			<table border="1" style="border-collapse: collapse">
+				<tr bgcolor="#c7c7c7">
+					<th> ID </th>
+					<th>	</th>
+					<th> Test Step </th>
+					<th> SRS Ref </th>
+					<th> Test Data </th>
+					<th> Expected Result </th>
+					<th> Pass or Fail? </th>
+					<th> Tester Comments </th>
+					<th> Intial/Date </th>
+				</tr>
+				
+				<tr bgcolor="#F1EBA0"><td colspan="9"><b>Functionality Section 1: Access the Rancher. The following tests show how to access theRancher, start a job in a docker container and reopen the launched job.</b></td></tr>
+				<tr>
+					<td> 1 </td>
+					<td> 6.1.1 </td>
+					<td> Login</td>
+					<td> 5.2.1 </td>
+					<td> Open Windows Explore and Type: <a href="https://axiohost13:8080">https://axiohost13:8080</a>.</td>
+					<td> The login screen appears in your browser.</td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 2 </td>
+					<td> 6.1.1 </td>
+					<td> Login with incorrect username or password</td>
+					<td> 5.2.1 </td>
+					<td> Type correct username but incorrect password.</td>
+					<td> A login screen will apear with the following message: <span style="color:red">ERROR: Username or Password incorrect.</span></td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 3 </td>
+					<td> 6.1.1 </td>
+					<td> Login with correct username and password </td>
+					<td> 5.2.1 </td>
+					<td> Type correct username and password</td>
+					<td> A Dashboard window will pop-up with the following along the top: APPLICATIONS , CATALOG, INFRASTRUCTURE, API and HELP. Under APPLICATIONS, STACKS are shown.</td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 4 </td>
+					<td> 6.1.2 </td>
+					<td> Open the STACKS window</td>
+					<td> 5.2.1 </td>
+					<td> Click on APPLICATIONS → STACKS button in the menu bar on the top of the Rancher window.</td>
+					<td> Stack window pop-up with the following contents: rows of running containers, each with +, name, Whether an upgrade is available, service, container, and a menu button.</td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 5 </td>
+					<td> 6.1.2 </td>
+					<td> Open the CATALOG window</td>
+					<td> 5.2.1 </td>
+					<td> Click CATALOG button on the top of the Rancher window</td>
+					<td> CATALOG window pop-up with the following contents: Only Axio catalogs are shown.</td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 6 </td>
+					<td> 6.1.2 </td>
+					<td> Look for Docker containers currently running in Rancher</td>
+					<td> 5.2.1 </td>
+					<td> Click APPLICATIONS → STACKS button on the top left side of the Rancher window and expand each Stack by clicking "+" in front of Stack name.</td>
+					<td> Working Stacks appear with the following contents: Stack names. Expanded Stack appear with the following contents:activity status, Catalog name,Image, and Ports.</td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 7 </td>
+					<td> 6.1.3 </td>
+					<td> First Log in into a launched container</td>
+					<td> 5.2.1 </td>
+					<td> Click the hyperlinked number next to <i>Ports</i> under the expanded Stack window, or copy into the clipboard,  of a running container. In a new tab, type "axiohost13", colon, port into the address bar.</td>
+					<td> The launched container will appear in the window.  Log in and change the password as instructed.</td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 8 </td>
+					<td> 6.1.3 </td>
+					<td> Second Log in into launched container</td>
+					<td> 5.2.1 </td>
+					<td> Open second window and enter address of running container.  Attempt login with incorrect password.</td>
+					<td> An authentication error will occur and you will be presented with a nore login prompt.</td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+				</tr>
+				<tr bgcolor="#F1EBA0"><td colspan="9"><b>Functionality Section 2. BamUtil tests</b></td></tr>
+				<tr>
+					<td> 9 </td>
+					<td> 6.2.1 </td>
+					<td> Trims the end of reads in a SAM file</td>
+					<td> 5.2.2 </td>
+					<td> Run the BamUtilTrimSam method in the testBamUtil class with the JUnit runner<span style="display:none" concordion:set="#script">testBamUtil.class</span></td>
+					<td> The output from the two diff commands should be blank, indicating the output is identical to the expected output.<span style="display:none" concordion:set="#exOut">'OK (1 test)'</span></td>
+					<td concordion:assert-equals="runTest_CheckOutput(#script,#exOut)" class="success">P</td>
+					<td> </td>
+					<td> </td>
+				</tr>
+				<tr bgcolor="#F1EBA0"><td colspan="9"><b>Functionality Section 3. samtools tests</b></td></tr>
+				<tr>
+					<td> 10 </td>
+					<td> 6.3.1 </td>
+					<td> Create index file from BAM file</td>
+					<td> 5.2.2 </td>
+					<td> Run the SamToolsIndex method in the testSamTools class with the JUnit runner<span style="display:none" concordion:set="#script">testSamTools.class</span></td>
+					<td> The output from the two diff commands should be blank, indicating the output is identical to the expected output.<span style="display:none" concordion:set="#exOut">'OK (2 tests)'</span></td>
+					<td rowspan="2" concordion:assert-equals="runTest_CheckOutput(#script,#exOut)" class="success">P</td>
+					<td> </td>
+					<td rowspan="2"> </td>
+				</tr>
+				<tr>
+					<td> 11 </td>
+					<td> 6.3.1 </td>
+					<td> Create pile up file from BAM file with a reference file in FASTA format</td>
+					<td> 5.2.2 </td>
+					<td> Run the SamToolsPileup method in the testSamTools class with the JUnit runner</td>
+					<td> The output from the seven diff commands should be blank, indicating the output is identical to the expected output.</td>
+					<td> </td>
+				</tr>
+				<tr bgcolor="#F1EBA0"><td colspan="9"><b>Functionality Section 4. bam-readcount tests</b></td></tr>
+				<tr>
+					<td> 12 </td>
+					<td> 6.4.1 </td>
+					<td> Generate metrics at SNP/InDel in BAM file with a reference file in FASTA format</td>
+					<td> 5.2.2 </td>
+					<td> Run the BamReadcountMetricsGeneration method in the testBamReadcount class with the JUnit runner<span style="display:none" concordion:set="#script">testBamReadcount.class</span></td>
+					<td> The output from the three diff commands should be blank, indicating the output is identical to the expected output<span style="display:none" concordion:set="#exOut">'OK (1 test)'</span></td>
+					<td concordion:assert-equals="runTest_CheckOutput(#script,#exOut)" class="success">P</td>
+					<td> </td>
+					<td> </td>
+				</tr>
+				<tr bgcolor="#F1EBA0"><td colspan="9"><b>Functionality Section 5. SnpEff tests</b></td></tr>
+				<tr>
+					<td> 13 </td>
+					<td> 6.5.1 </td>
+					<td> Annotate variants from VCF file</td>
+					<td> 5.2.2 </td>
+					<td> Run the SNPEffAnnotation method in the testSNPEff class with the JUnit runner<span style="display:none" concordion:set="#script">testSNPEff.class</span></td>
+					<td> The output from the diff commands should be blank, indicating the output is identical to the expected output<span style="display:none" concordion:set="#exOut">'OK (4 tests)'</span></td>
+					<td rowspan="4" concordion:assert-equals="runTest_CheckOutput(#script,#exOut)" class="failure"><del class="expected">P</del>
+<ins class="actual">F</ins></td>
+					<td> </td>
+					<td rowspan="4"> </td>
+				</tr>
+				<tr>
+					<td> 14 </td>
+					<td> 6.5.2 </td>
+					<td> Redirect stderr to log file</td>
+					<td> 5.2.3 </td>
+					<td> Run the SNPEffFailPurpose method in the testSNPEff class with the JUnit runner</td>
+					<td> The error.log should have text, indicating an error was detect</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 15 </td>
+					<td> 6.5.1 </td>
+					<td> Annotate variants from VCF file with SNPEff v3.3</td>
+					<td> 5.2.2 </td>
+					<td> Run the SNPEffv3_3Annotation method in the testSNPEff class with the JUnit runner</td>
+					<td> The output from the diff commands should be blank, indicating the output is identical to the expected output</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 16 </td>
+					<td> 6.5.2 </td>
+					<td> Redirect stderr to log file with SNPEff v3.3</td>
+					<td> 5.2.3 </td>
+					<td> Run the SNPEffv3_3FailPurpose method in the testSNPEff class with the JUnit runner</td>
+					<td> The error.log should have text, indicating an error was detect</td>
+					<td> </td>
+				</tr>
+				<tr bgcolor="#F1EBA0"><td colspan="9"><b>Functionality Section 6. Text Output</b></td></tr>
+				<tr>
+					<td> 17 </td>
+					<td> 6.6.1 </td>
+					<td> Test Output of snpEff</td>
+					<td> 5.2.4 </td>
+					<td> Run the SnpEff_testchr22hg19annvcf_contains_text method in the testTextOutput class with the JUnit runner<span style="display:none" concordion:set="#script">testTextOutput.class</span></td>
+					<td> The output from the cat command should not be blank<span style="display:none" concordion:set="#exOut">'OK (3 tests)'</span></td>
+					<td rowspan="3" concordion:assert-equals="runTest_CheckOutput(#script,#exOut)" class="success">P</td>
+					<td> </td>
+					<td rowspan="3"> </td>
+				</tr>
+				<tr>
+					<td> 18 </td>
+					<td> 6.6.1 </td>
+					<td> Test Output of snpEffv3.3</td>
+					<td> 5.2.4 </td>
+					<td> Run the SnpEff_demo1kgvcf_contains_text method in the testTextOutput class with the JUnit runner</td>
+					<td> The output from the cat command should not be blank</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 19 </td>
+					<td> 6.6.1 </td>
+					<td> Test output of RTG</td>
+					<td> 5.2.4 </td>
+					<td> Run the RTG_synthetic2_snpsVCF_contains_text method in the testTextOutput class with the JUnit runner</td>
+					<td> The output from the cat command should not be blank</td>
+					<td> </td>
+				</tr>
+				<tr bgcolor="#F1EBA0"><td colspan="9"><b>Functionality Section 7. RTG tests for Somatic Variants</b></td></tr>
+				<tr>
+					<td> 20 </td>
+					<td> 6.7.1 </td>
+					<td> Call somatic variants from sam file</td>
+					<td> 5.2.2 </td>
+					<td> Run the RTGCallSomaticFromSAM method in the testRTG_Somatic class with the JUnit runner<span style="display:none" concordion:set="#script">testRTG_Somatic.class</span></td>
+					<td> The output from the last java call should be blank.<span style="display:none" concordion:set="#exOut">'OK (5 tests)'</span></td>
+					<td rowspan="5" concordion:assert-equals="runTest_CheckOutput(#script,#exOut)" class="success">P</td>
+					<td> </td>
+					<td rowspan="5"> </td>
+				</tr>
+				<tr>
+					<td> 21 </td>
+					<td> 6.7.1 </td>
+					<td> Call somatic variants from sam file using paired samples</td>
+					<td> 5.2.2 </td>
+					<td> Run the RTGCallSomaticPairedFromSam method in the testRTG_Somatic class with the JUnit runner</td>
+					<td> The output from the two diff commands should be blank, indicating the output is identical to the expected output.</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 22 </td>
+					<td> 6.7.2 </td>
+					<td> Create vcf of somatic variant calls and filter file on various quality scores</td>
+					<td> 5.2.2 </td>
+					<td> Run the RTGCallSomaticAndFilter method in the testRTG_Somatic class with the JUnit runner</td>
+					<td> The output from the two diff commands should be blank, indicating the output is identical to the expected output.  The output from the last java call should also be blank.</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 23 </td>
+					<td> 6.7.2 </td>
+					<td> Create vcf of somatic variant calls from bam file and filter file on various quality scores</td>
+					<td> 5.2.2 </td>
+					<td> Run the RTGCallSomaticandFilterFromBAM method in the testRTG_Somatic class with the JUnit runner</td>
+					<td> The output from the last java call should be blank.</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 24 </td>
+					<td> 6.7.3 </td>
+					<td> Check redirection of standard error output to file for logging</td>
+					<td> 5.2.3 </td>
+					<td> Run the RTG_snpSummary_contains_text method in the testRTG_Somatic class with the JUnit runner</td>
+					<td> The output from the cat command should not be blank</td>
+					<td> </td>
+				</tr>
+				<tr bgcolor="#F1EBA0"><td colspan="9"><b>Functionality Section 8. RTG tests for Germline Variants</b></td></tr>
+				<tr>
+					<td> 25 </td>
+					<td> 6.8.1 </td>
+					<td> Call germline variants from sam file using paired samples</td>
+					<td> 5.2.2 </td>
+					<td> Run the RTGCallGermllinePairedFromSam method in the testRTG_Germline class with the JUnit runner<span style="display:none" concordion:set="#script">testRTG_Germline.class</span></td>
+					<td> The output from the two diff commands should be blank, indicating the output is identical to the expected output.<span style="display:none" concordion:set="#exOut">'OK (3 tests)'</span></td>
+					<td rowspan="3" concordion:assert-equals="runTest_CheckOutput(#script,#exOut)" class="success">P</td>
+					<td> </td>
+					<td rowspan="3"> </td>
+				</tr>
+				<tr>
+					<td> 26 </td>
+					<td> 6.8.2 </td>
+					<td>Create vcf of germline variant calls from bam file and filter file on various quality scores</td>
+					<td> 5.2.2 </td>
+					<td> Run the RTGCallGermlineFromBAM method in the testRTG_Germline class with the JUnit runner</td>
+					<td> The output from the two diff commands should be blank, indicating the output is identical to the expected output.</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 27 </td>
+					<td> 6.8.3 </td>
+					<td> Check redirection of standard error output to file for logging</td>
+					<td> 5.2.3 </td>
+					<td> Run the RTG_snpSummary_Incl_Germline_contains_text method in the testRTG_Germline class with the JUnit runner</td>
+					<td> The output from the cat command should not be blank</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 28 </td>
+					<td> 6.8.1 </td>
+					<td> Call germline variants from an AVR generated from a template SDF</td>
+					<td> 5.2.2 </td>
+					<td> Run theRTGsnp_chr22_tiny_avr method in the testRTG_snp_chr22 class with the JUnit runner<span style="display:none" concordion:set="#script">testRTG_snp_chr22.class</span></td>
+					<td> The output from the three diff commands should be blank and single java command, indicating the output is identical to the expected output.<span style="display:none" concordion:set="#exOut">'OK (2 tests)'</span></td>
+					<td rowspan="2" concordion:assert-equals="runTest_CheckOutput(#script,#exOut)" class="success">P</td>
+					<td> </td>
+					<td rowspan="2"> </td>
+				</tr>
+				<tr>
+					<td> 29 </td>
+					<td> 6.8.2 </td>
+					<td> Call germline variants from a template SDF, using an AVR generated previously</td>
+					<td> 5.2.2 </td>
+					<td> Run the RTGsnp_chr22_tiny method in the testRTG_snp_chr22 class with the JUnit runner</td>
+					<td> The output from the seven diff commands should not be blank</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 30 </td>
+					<td> 6.8.2 </td>
+					<td> Create a VCF and filter variants from a template SDF</td>
+					<td> 5.2.2 </td>
+					<td> Run RTGsnp_only_1 method in the testRTG_snp_only class with the JUnit runner<span style="display:none" concordion:set="#script">testRTG_snp_only.class</span></td>
+					<td> The output from the seven diff commands should be blank, indicating the output is identical to the expected output.<span style="display:none" concordion:set="#exOut">'OK (7 tests)'</span></td>
+					<td rowspan="7" concordion:assert-equals="runTest_CheckOutput(#script,#exOut)" class="success">P</td>
+					<td> </td>
+					<td rowspan="7"> </td>
+				</tr>
+				<tr>
+					<td> 31 </td>
+					<td> 6.8.2 </td>
+					<td> Create a VCF and keep only haploid variants from a template SDF</td>
+					<td> 5.2.2 </td>
+					<td> Run the RTGsnp_only_1_haploid method in the testRTG_snp_only class with the JUnit runner</td>
+					<td> The output from the seven diff commands should not be blank</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 32 </td>
+					<td> 6.8.2 </td>
+					<td> Create a VCF based on coverage from a template SDF</td>
+					<td> 5.2.2 </td>
+					<td> Run the RTGsnp_only_coverage method in the testRTG_snp_only class with the JUnit runner</td>
+					<td> The output from the six diff commands should not be blank</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 33 </td>
+					<td> 6.8.2 </td>
+					<td> Create a VCF keeping only the snps from a template SDF</td>
+					<td> 5.2.2 </td>
+					<td> Run the RTGsnp_only_2 method in the testRTG_snp_only class with the JUnit runner</td>
+					<td> The output from the six diff commands should not be blank</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 34 </td>
+					<td> 6.8.2 </td>
+					<td> Create a VCF keeping only the snps from a template SDF</td>
+					<td> 5.2.2 </td>
+					<td> Run the RTGsnp_only_3 method in the testRTG_snp_only class with the JUnit runner</td>
+					<td> The output from the six diff commands should not be blank</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 35 </td>
+					<td> 6.8.2 </td>
+					<td> Create a VCF keeping only the snps in a certain region from a template SDF</td>
+					<td> 5.2.2 </td>
+					<td> Run the RTGsnp_only_3_restriction method in the testRTG_snp_only class with the JUnit runner</td>
+					<td> The output from the diff commands should not be blank</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 36 </td>
+					<td> 6.8.2 </td>
+					<td> Create a VCF keeping only the snps in a certain extended region from a template SDF</td>
+					<td> 5.2.2 </td>
+					<td> Run the RTGsnp_only_4_restriction method in the testRTG_snp_only class with the JUnit runner</td>
+					<td> The output from the diff commands should not be blank</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 37 </td>
+					<td> 6.8.2 </td>
+					<td> Create a VCF with sex flag set to either from a template SDF</td>
+					<td> 5.2.2 </td>
+					<td> Run RTGsnp_sex_either method in the testRTG_snp_sex class with the JUnit runner<span style="display:none" concordion:set="#script">testRTG_snp_sex.class</span></td>
+					<td> The output from the two diff commands and two java commands should be blank, indicating the output is identical to the expected output.<span style="display:none" concordion:set="#exOut">'OK (3 tests)'</span></td>
+					<td rowspan="3" concordion:assert-equals="runTest_CheckOutput(#script,#exOut)" class="success">P</td>
+					<td> </td>
+					<td rowspan="3"> </td>
+				</tr>
+				<tr>
+					<td> 38 </td>
+					<td> 6.8.2 </td>
+					<td> Create a VCF with sex flag set to female from a template SDF</td>
+					<td> 5.2.2 </td>
+					<td> Run the RTGsnp_sex_female method in the testRTG_snp_sex class with the JUnit runner</td>
+					<td> The output from the two diff commands and two java commands should not be blank</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 39 </td>
+					<td> 6.8.2 </td>
+					<td> Create a VCF with sex flag set to male from a template SDF</td>
+					<td> 5.2.2 </td>
+					<td> Run the RTGsnp_sex_male method in the testRTG_snp_sex class with the JUnit runner</td>
+					<td> The output from the two diff commands and two java commands should not be blank</td>
+					<td> </td>
+				</tr>
+				<tr bgcolor="#F1EBA0"><td colspan="9"><b>Functionality Section 9. RTG tests for Variant Calls in Pedigreed Populations</b></td></tr>
+				<tr>
+					<td> 40 </td>
+					<td> 6.9.1, 6.9.2 </td>
+					<td> Create a VCF using a pedrigreed Sam file, identifying parents and children</td>
+					<td> 5.2.2, 5.2.3 </td>
+					<td> Run the RTG_family_test method in the testRTG_family class with the JUnit runner<span style="display:none" concordion:set="#script">testRTG_family.class</span></td>
+					<td> The output from the two diff commands and java command should be blank<span style="display:none" concordion:set="#exOut">'OK (3 tests)'</span></td>
+					<td rowspan="3" concordion:assert-equals="runTest_CheckOutput(#script,#exOut)" class="success">P</td>
+					<td> </td>
+					<td rowspan="3"> </td>
+				</tr>
+				<tr>
+					<td> 41 </td>
+					<td> 6.9.1, 6.9.2 </td>
+					<td> Create a VCF using pedigreed data, filtering for ambiguity</td>
+					<td> 5.2.2, 5.2.3 </td>
+					<td> Run the RTG_check_Coverage_and_Abiguity_Calls method in the testRTG_family class with the JUnit runner</td>
+					<td> The output from the two diff commands and two java commands should be blank</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 42 </td>
+					<td> 6.9.1, 6.9.2 </td>
+					<td> Create a VCF using pedigreed data, missing one of the subject identifiers</td>
+					<td> 5.2.2, 5.2.3 </td>
+					<td> Run the RTG_subFamily_test method in the testRTG_family class with the JUnit runner</td>
+					<td> The output from the two diff commands and java command should t be blank</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 43 </td>
+					<td> 6.9.1, 6.9.2 </td>
+					<td> Create a VCFs for each subject, call variants and separate out based on subject identifiers</td>
+					<td> 5.2.2, 5.2.3 </td>
+					<td> Run the RTG_family_test method in the testRTG_family_sex class with the JUnit runner<span style="display:none" concordion:set="#script">testRTG_family_sex.class</span></td>
+					<td> The output from the 19 java commands should be blank<span style="display:none" concordion:set="#exOut">'OK (4 tests)'</span></td>
+					<td rowspan="4" concordion:assert-equals="runTest_CheckOutput(#script,#exOut)" class="success">P</td>
+					<td> </td>
+					<td rowspan="4"> </td>
+				</tr>
+				<tr>
+					<td> 44 </td>
+					<td> 6.9.1, 6.9.2 </td>
+					<td> Create a VCFs for each subject using denovo data, call variants and separate out based on subject identifiers</td>
+					<td> 5.2.2, 5.2.3 </td>
+					<td> Run the RTG_family_denovo_test method in the testRTG_family_sex class with the JUnit runner</td>
+					<td> The output from the 19 java commands should be blank</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 45 </td>
+					<td> 6.9.1, 6.9.2 </td>
+					<td> Create a single VCF from multiple pedigreed Sams, keeping only the SNPs</td>
+					<td> 5.2.2, 5.2.3 </td>
+					<td> Run the RTG_family_snps_only method in the testRTG_family_sex class with the JUnit runner</td>
+					<td> The output from the four java commands should be blank</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 46 </td>
+					<td> 6.9.1, 6.9.2 </td>
+					<td> Create a single VCF from multiple pedigreed Sams, keeping All the variants</td>
+					<td> 5.2.2, 5.2.3 </td>
+					<td> Run the RTG_family_all_mode method in the testRTG_family_sex class with the JUnit runner</td>
+					<td> The output from the four java commands should be blank</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 47 </td>
+					<td> 6.9.1, 6.9.2 </td>
+					<td> Create a VCF for a family, imputing mothers variants from 2 sons, 2 daughters and a father</td>
+					<td> 5.2.2, 5.2.3 </td>
+					<td> Run the RTG_family_test method in the testRTG_population_sex_fast class with the JUnit runner<span style="display:none" concordion:set="#script">testRTG_population_sex_fast.class</span></td>
+					<td> The output from the four diff commands and java command should be blank<span style="display:none" concordion:set="#exOut">'OK (1 test)'</span></td>
+					<td rowspan="1" concordion:assert-equals="runTest_CheckOutput(#script,#exOut)" class="success">P</td>
+					<td> </td>
+					<td rowspan="1"> </td>
+				</tr>
+				<tr bgcolor="#F1EBA0"><td colspan="9"><b>Functionality Section 10. RTG tests for Copy Number Variation</b></td></tr>
+				<tr>
+					<td> 48 </td>
+					<td> 6.10.1, 6.10.2 </td>
+					<td> Call Copy Number Variants from a template SAMs and genome</td>
+					<td> 5.2.2, 5.2.3 </td>
+					<td> Run the RTG_cnv_test method in the testRTG_cnv class with the JUnit runner<span style="display:none" concordion:set="#script">testRTG_cnv.class</span></td>
+					<td> The output from the two diff commands should be blank.<span style="display:none" concordion:set="#exOut">'OK (1 test)'</span></td>
+					<td rowspan="1" concordion:assert-equals="runTest_CheckOutput(#script,#exOut)" class="success">P</td>
+					<td> </td>
+					<td rowspan="1"> </td>
+				</tr>
+				<tr bgcolor="#F1EBA0"><td colspan="9"><b>Functionality Section 11. RTG tests for RTG Tools</b></td></tr>
+				<tr>
+					<td> 49 </td>
+					<td> 6.11.1 </td>
+					<td> Read in a template Fasta file and convert to an SDF and back</td>
+					<td> 5.2.2 </td>
+					<td> Run the RTG_test_Reading_fasta method in the  testRTG_format class with the JUnit runner<span style="display:none" concordion:set="#script"> testRTG_format.class</span></td>
+					<td> The output from the diff command should be blank.<span style="display:none" concordion:set="#exOut">'OK (4 tests)'</span></td>
+					<td rowspan="4" concordion:assert-equals="runTest_CheckOutput(#script,#exOut)" class="success">P</td>
+					<td> </td>
+					<td rowspan="4"> </td>
+				</tr>
+				<tr>
+					<td> 50 </td>
+					<td> 6.11.1 </td>
+					<td> Read in a template Fastq file and convert to an SDF and back</td>
+					<td> 5.2.2 </td>
+					<td> Run the RTG_test_Reading_fastq method in the testRTG_format class with the JUnit runner</td>
+					<td> The output from the diff command should be blank</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 51 </td>
+					<td> 6.11.1 </td>
+					<td> Read in a template Solexa file and convert to an SDF and back</td>
+					<td> 5.2.2 </td>
+					<td> Run the RTG_test_Reading_Solexa method in the testRTG_format class with the JUnit runner</td>
+					<td> The output from the diff command should be blank</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 52 </td>
+					<td> 6.11.1 </td>
+					<td> Read in a template Illumina file and convert to an SDF</td>
+					<td> 5.2.2 </td>
+					<td> Run the RTG_test_Illumina_Mapped_Input method in the testRTG_format class with the JUnit runner</td>
+					<td> The output from the diff command should be blank</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 53 </td>
+					<td> 6.11.1, 6.11.2 </td>
+					<td> Read in a template CG file and convert to an SDF. Generate Stats on left and right reads</td>
+					<td> 5.2.2, 5.2.2 </td>
+					<td> Run the RTG_cg2sdf_sim_tiny method in the  testRTG_cg2sdf class with the JUnit runner<span style="display:none" concordion:set="#script"> testRTG_cg2sdf.class</span></td>
+					<td> The output from the ten diff commands should be blank.<span style="display:none" concordion:set="#exOut">'OK (2 tests)'</span></td>
+					<td rowspan="2" concordion:assert-equals="runTest_CheckOutput(#script,#exOut)" class="success">P</td>
+					<td> </td>
+					<td rowspan="2"> </td>
+				</tr>
+				<tr>
+					<td> 54 </td>
+					<td> 6.11.1, 6.11.2 </td>
+					<td> Read in a template CG file and convert to an SDF and generate statistics on SDF</td>
+					<td>  5.2.2, 5.2.2 </td>
+					<td> Run the RTG_testTsv2 method in the testRTG_cg2sdf class with the JUnit runner</td>
+					<td> The output from the two diff commands should be blank</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 55 </td>
+					<td> 6.11.2 </td>
+					<td> Generate stats on a template SDF based on the sex flag being either, male and female </td>
+					<td> 5.2.2 </td>
+					<td> Run the RTG_sdfstats_listsex method in the  testRTG_map_sex class with the JUnit runner<span style="display:none" concordion:set="#script"> testRTG_map_sex.class</span></td>
+					<td> The output from the ten diff commands should be blank.<span style="display:none" concordion:set="#exOut">'OK (4 tests)'</span></td>
+					<td rowspan="4" concordion:assert-equals="runTest_CheckOutput(#script,#exOut)" class="success">P</td>
+					<td> </td>
+					<td rowspan="4"> </td>
+				</tr>
+				<tr>
+					<td> 56 </td>
+					<td> 6.11.1 </td>
+					<td> Generate SDFs based on a template SDF and changing the sex flag as non-existant, male and female </td>
+					<td> 5.2.2 </td>
+					<td> Run the RTG_longreads method in the testRTG_map_sex class with the JUnit runner</td>
+					<td> The output from the eight diff commands should be blank</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 57 </td>
+					<td> 6.11.1 </td>
+					<td> Generate SDFs based on a template SDF and changing the sex flag as non-existant, male and female </td>
+					<td> 5.2.2 </td>
+					<td> Run the RTG_shortreads method in the testRTG_map_sex class with the JUnit runner</td>
+					<td> The output from the eight diff commands should be blank</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 58 </td>
+					<td> 6.11.1 </td>
+					<td> Generate SDFs based on a template SDF , specifying read groups and sex flag as male</td>
+					<td> 5.2.2 </td>
+					<td> Run the RTG_shortreads method in the testRTG_map_sex class with the JUnit runner</td>
+					<td> The output from the diff command should be blank</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 59 </td>
+					<td> 6.11.1 </td>
+					<td> Merge together two template vcfs that have been indexed </td>
+					<td> 5.2.2 </td>
+					<td> Run the RTG_indel_vcf_short method in the  testRTG_vcfmerge class with the JUnit runner<span style="display:none" concordion:set="#script"> testRTG_vcfmerge.class</span></td>
+					<td> The output from the two diff commands and two java commands should be blank.<span style="display:none" concordion:set="#exOut">'OK (1 test)'</span></td>
+					<td rowspan="1" concordion:assert-equals="runTest_CheckOutput(#script,#exOut)" class="success">P</td>
+					<td> </td>
+					<td rowspan="1"> </td>
+				</tr>
+				<tr>
+					<td> 60 </td>
+					<td> 6.11.1 </td>
+					<td> Split a template SDF</td>
+					<td> 5.2.2 </td>
+					<td> Run the RTG_indel_vcf_short method in the  testRTG_sdfsplit_fast class with the JUnit runner<span style="display:none" concordion:set="#script"> testRTG_sdfsplit_fast.class</span></td>
+					<td> The output from the three diff commands and two grep commands should be blank.<span style="display:none" concordion:set="#exOut">'OK (1 test)'</span></td>
+					<td concordion:assert-equals="runTest_CheckOutput(#script,#exOut)" class="success">P</td>
+					<td> </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 61 </td>
+					<td> 6.11.2 </td>
+					<td> Generate statistics on a template VCF</td>
+					<td> 5.2.2 </td>
+					<td> Run the RTG_indel_vcf_short method in the  testRTG_vcfstats class with the JUnit runner<span style="display:none" concordion:set="#script"> testRTG_vcfstats.class</span></td>
+					<td> The output from the diff command should be blank.<span style="display:none" concordion:set="#exOut">'OK (1 test)'</span></td>
+					<td concordion:assert-equals="runTest_CheckOutput(#script,#exOut)" class="success">P</td>
+					<td> </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 62 </td>
+					<td> 6.11.1, 6.11.2 </td>
+					<td> Generate an Index of a bgzipped sam for extraction</td>
+					<td> 5.2.2, 5.2.2 </td>
+					<td> Run the RTG_indexes_sam method in the  testRTG_indexes class with the JUnit runner<span style="display:none" concordion:set="#script"> testRTG_indexes.class</span></td>
+					<td> The output from the diff command should be blank.<span style="display:none" concordion:set="#exOut">'OK (5 tests)'</span></td>
+					<td rowspan="5" concordion:assert-equals="runTest_CheckOutput(#script,#exOut)" class="success">P</td>
+					<td> </td>
+					<td rowspan="5"> </td>
+				</tr>
+				<tr>
+					<td> 63 </td>
+					<td> 6.11.1, 6.11.2 </td>
+					<td> Generate an Index of a bgzipped sv for extraction</td>
+					<td> 5.2.2, 5.2.2 </td>
+					<td> Run the RTG_indexes_sv method in the  testRTG_indexes class with the JUnit runner</td>
+					<td> The output from the diff command should be blank.</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 64 </td>
+					<td> 6.11.1, 6.11.2 </td>
+					<td> Generate an Index of a bgzipped vcf for extraction</td>
+					<td> 5.2.2, 5.2.2 </td>
+					<td> Run the RTG_indexes_vcf method in the  testRTG_indexes class with the JUnit runner</td>
+					<td> The output from the diff command should be blank.</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 65 </td>
+					<td> 6.11.1, 6.11.2 </td>
+					<td> Generate an Index of a bgzipped coverage file for extraction</td>
+					<td> 5.2.2, 5.2.2 </td>
+					<td> Run the RTG_indexes_coverage method in the  testRTG_indexes class with the JUnit runner</td>
+					<td> The output from the diff command should be blank.</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 66 </td>
+					<td> 6.11.1, 6.11.2 </td>
+					<td> Generate an Index of a BAM file for extraction</td>
+					<td> 5.2.2, 5.2.2 </td>
+					<td> Run the RTG_indexes_bam method in the  testRTG_indexes class with the JUnit runner</td>
+					<td> The output from the diff command should be blank.</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 67 </td>
+					<td> 6.11.3</td>
+					<td> Generate simulated VCFs for Populations, Parents, Family and Children based on a template SDF</td>
+					<td> 5.2.2 </td>
+					<td> Run the RTG_sim_simulation method in the  testRTG_simulation class with the JUnit runner<span style="display:none" concordion:set="#script"> testRTG_simulation.class</span></td>
+					<td> The output from the two diff command and three java commands should be blank.<span style="display:none" concordion:set="#exOut">'OK (4 tests)'</span></td>
+					<td rowspan="4" concordion:assert-equals="runTest_CheckOutput(#script,#exOut)" class="success">P</td>
+					<td> </td>
+					<td rowspan="4"> </td>
+				</tr>
+				<tr>
+					<td> 68 </td>
+					<td> 6.11.3 </td>
+					<td> Generate a simluated SDF</td>
+					<td> 5.2.2 </td>
+					<td> Run the RTG_genomesim_sim_gen method in the  testRTG_simulation class with the JUnit runner</td>
+					<td> The output from the two diff commands should be blank.</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 69 </td>
+					<td> 6.11.3 </td>
+					<td> Generate simluated CG data based on a template SDF</td>
+					<td> 5.2.2 </td>
+					<td> Run the RTG_cgsim_sim_reads method in the  testRTG_simulation class with the JUnit runner</td>
+					<td> The output from the diff command should be blank.</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 70 </td>
+					<td> 6.11.3 </td>
+					<td> Generate simulated CG data based on a template SDF, version two</td>
+					<td> 5.2.2 </td>
+					<td> Run the RTG_cgsim_sim_reads_v2 method in the  testRTG_simulation class with the JUnit runner</td>
+					<td> The output from the three diff commands should be blank.</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 71 </td>
+					<td> 6.11.1</td>
+					<td> Generate CG data from a template tsv, convert to an SDF and generate stats, apply mating and N limits </td>
+					<td> 5.2.2 </td>
+					<td> Run the RTG_tiny_end2end_bam method in the  testRTG_cgmap_gotoh class with the JUnit runner<span style="display:none" concordion:set="#script"> testRTG_cgmap_gotoh.class</span></td>
+					<td> The output from the grep command should be blank.<span style="display:none" concordion:set="#exOut">'OK (10 tests)'</span></td>
+					<td rowspan="10" concordion:assert-equals="runTest_CheckOutput(#script,#exOut)" class="success">P</td>
+					<td> </td>
+					<td rowspan="10"> </td>
+				</tr>
+				<tr>
+					<td> 72 </td>
+					<td> 6.11.1 </td>
+					<td> Generate CG data from a template tsv, convert to an SDF and generate stats, keep all alignments that pass threshold</td>
+					<td> 5.2.2 </td>
+					<td> Run the RTG_tiny_end2end_allhits method in the  testRTG_cgmap_gotoh class with the JUnit runner</td>
+					<td> The output from the two java commands should be blank.</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 73 </td>
+					<td> 6.11.1 </td>
+					<td> Generate CG data from a second template tsv, convert to an SDF and generate stats, keep all alignments that pass threshold</td>
+					<td> 5.2.2 </td>
+					<td> Run the RTG_tiny_V2_end2end_allhits method in the  testRTG_cgmap_gotoh class with the JUnit runner</td>
+					<td> The output from the java command should be blank.</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 74 </td>
+					<td> 6.11.1 </td>
+					<td> Read template sam to SDF, and apply machine errors to complete sequecing error settings</td>
+					<td> 5.2.2 </td>
+					<td> Run the RTG_cgsnp_gotoh method in the  testRTG_cgmap_gotoh class with the JUnit runner</td>
+					<td> The output from the diff command should be blank.</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 75 </td>
+					<td> 6.11.1 </td>
+					<td> Read template sam to SDF, and apply machine errors to complete genomics sequecing error settings</td>
+					<td> 5.2.2 </td>
+					<td> Run the RTG_cgv2snp_gotoh method in the  testRTG_cgmap_gotoh class with the JUnit runner</td>
+					<td> The output from the two java commands should be blank.</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 76 </td>
+					<td> 6.11.1 </td>
+					<td> Read template sam to SDF, and apply machine errors to complete sequecing error settings</td>
+					<td> 5.2.2 </td>
+					<td> Run the RTG_cgsnp_gotoh_super method in the  testRTG_cgmap_gotoh class with the JUnit runner</td>
+					<td> The output from the diff command should be blank.</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 77 </td>
+					<td> 6.11.1 </td>
+					<td> Convert CG data to SDF, and generate mapped data with SDF </td>
+					<td> 5.2.2 </td>
+					<td> Run the RTG_cg_with_readgroup_gotoh method in the  testRTG_cgmap_gotoh class with the JUnit runner</td>
+					<td> The output from the grep command and four java commands should be blank.</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 78 </td>
+					<td> 6.11.1 </td>
+					<td> Convert mated Sam to SDF </td>
+					<td> 5.2.2 </td>
+					<td> Run the RTG_cgsnp_gotoh_rg method in the  testRTG_cgmap_gotoh class with the JUnit runner</td>
+					<td> The output from the grep command and four java commands should be blank.</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 79 </td>
+					<td> 6.11.1 </td>
+					<td> Read template SDF, with limited read length specified in command line args </td>
+					<td> 5.2.2 </td>
+					<td> Run the RTG_TinyDataRunRange_gotoh method in the  testRTG_cgmap_gotoh class with the JUnit runner</td>
+					<td> The output from the two grep commands and three diff commands should be blank.</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 80 </td>
+					<td> 6.11.1 </td>
+					<td> Read template SDF, and generate stats on SDF </td>
+					<td> 5.2.2 </td>
+					<td> Run the RTG_Test_Map_Off_Template_Start method in the  testRTG_cgmap_gotoh class with the JUnit runner</td>
+					<td> The output from the diff command and grep command should be blank.</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 81 </td>
+					<td> 6.11.1</td>
+					<td> Map input SDF to a VCF based on the sex flag being either</td>
+					<td> 5.2.2 </td>
+					<td> Run the RTGmap_snp_either method in the  testRTG_map_snp_sex class with the JUnit runner<span style="display:none" concordion:set="#script"> testRTG_map_snp_sex.class</span></td>
+					<td> The output from the diff command should be blank.<span style="display:none" concordion:set="#exOut">'OK (3 tests)'</span></td>
+					<td rowspan="3" concordion:assert-equals="runTest_CheckOutput(#script,#exOut)" class="success">P</td>
+					<td> </td>
+					<td rowspan="3"> </td>
+				</tr>
+				<tr>
+					<td> 82 </td>
+					<td> 6.11.1 </td>
+					<td> Map input SDF to a VCF based on the sex flag being female</td>
+					<td> 5.2.2 </td>
+					<td> Run the RTGmap_snp_female method in the  testRTG_map_snp_sex class with the JUnit runner</td>
+					<td> The output from the diff commands should be blank.</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 83 </td>
+					<td> 6.11.1 </td>
+					<td> Map input SDF to a VCF based on the sex flag being male</td>
+					<td> 5.2.2 </td>
+					<td> Run the RTGmap_snp_male method in the  testRTG_map_snp_sex class with the JUnit runner</td>
+					<td> The output from the diff commands should be blank.</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 84 </td>
+					<td> 6.11.1</td>
+					<td> Maps input SDF with -w set to 25 and r100</td>
+					<td> 5.2.2 </td>
+					<td> Run the RTG_longRAMPE_r100_w25 method in the  testRTG_long_pe_rammap class with the JUnit runner<span style="display:none" concordion:set="#script"> testRTG_long_pe_rammap.class</span></td>
+					<td> The output from the three grep commands and 12 diff commands should be blank.<span style="display:none" concordion:set="#exOut">'OK (12 tests)'</span></td>
+					<td rowspan="12" concordion:assert-equals="runTest_CheckOutput(#script,#exOut)" class="success">P</td>
+					<td> </td>
+					<td rowspan="12"> </td>
+				</tr>
+				<tr>
+					<td> 85 </td>
+					<td> 6.11.1 </td>
+					<td> Maps input SDF with -w set to 12 and r100</td>
+					<td> 5.2.2 </td>
+					<td> Run the RTG_longRAMPE_r100_w12 method in the  testRTG_long_pe_rammap class with the JUnit runner</td>
+					<td> The output from the three grep commands and 12 diff commands should be blank.</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 86 </td>
+					<td> 6.11.1 </td>
+					<td> Maps input SDF with -w set to 25 and r72</td>
+					<td> 5.2.2 </td>
+					<td> Run the RTG_longRAMPE_r72_w25 method in the  testRTG_long_pe_rammap class with the JUnit runner</td>
+					<td> The output from the three grep commands and 12 diff commands should be blank.</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 87 </td>
+					<td> 6.11.1 </td>
+					<td> Maps input SDF with -w set to 12 and r72</td>
+					<td> 5.2.2 </td>
+					<td> Run the RTG_longRAMPE_r72_w12 method in the  testRTG_long_pe_rammap class with the JUnit runner</td>
+					<td> The output from the three grep commands and 12 diff commands should be blank.</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 88 </td>
+					<td> 6.11.1 </td>
+					<td> Maps input SAM with -w set to 12 and r72</td>
+					<td> 5.2.2 </td>
+					<td> Run the RTG_longRAMPE_r72_w12 method in the  testRTG_long_pe_rammap class with the JUnit runner</td>
+					<td> The output from the three grep commands and 10 diff commands should be blank.</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 89 </td>
+					<td> 6.11.1 </td>
+					<td> Maps input SAM with -w set to 25 and r72</td>
+					<td> 5.2.2 </td>
+					<td> Run the RTG_longRAMPE_r72_w25 method in the  testRTG_long_pe_rammap class with the JUnit runner</td>
+					<td> The output from the three grep commands and 10 diff commands should be blank.</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 90 </td>
+					<td> 6.11.1 </td>
+					<td> Maps input SAM with -w set to 12 and r100</td>
+					<td> 5.2.2 </td>
+					<td> Run the RTG_longRAMPE_r100_w12 method in the  testRTG_long_pe_rammap class with the JUnit runner</td>
+					<td> The output from the three grep commands and 10 diff commands should be blank.</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 91 </td>
+					<td> 6.11.1 </td>
+					<td> Maps input SAM with -w set to 25 and r100</td>
+					<td> 5.2.2 </td>
+					<td> Run the RTG_longRAMPE_r100_w25 method in the  testRTG_long_pe_rammap class with the JUnit runner</td>
+					<td> The output from the three grep commands and 10 diff commands should be blank.</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 92 </td>
+					<td> 6.11.1 </td>
+					<td> Maps input SDF with -w set to 18, and -m 2000 -M 2500</td>
+					<td> 5.2.2 </td>
+					<td> Run the RTG_454_bug997 method in the  testRTG_long_pe_rammap class with the JUnit runner</td>
+					<td> The output from the grep command and four java commands should be blank.</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 93 </td>
+					<td> 6.11.1 </td>
+					<td> Maps input SDF with -w set to 18, sets readgroup</td>
+					<td> 5.2.2 </td>
+					<td> Run the RTG_with_rg method in the  testRTG_long_pe_rammap class with the JUnit runner</td>
+					<td> The output from the grep command and four java commands should be blank.</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 94 </td>
+					<td> 6.11.1 </td>
+					<td> Maps input SDF with -w set to 18, sets readgroup</td>
+					<td> 5.2.2 </td>
+					<td> Run the RTG_with_rg_bam method in the  testRTG_long_pe_rammap class with the JUnit runner</td>
+					<td> The output from the grep command and three diff commands should be blank.</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 95 </td>
+					<td> 6.11.1 </td>
+					<td> Maps input SDF with -w set to 25, sets a start and end read</td>
+					<td> 5.2.2 </td>
+					<td> Run the RTG_longRAMPE_range method in the  testRTG_long_pe_rammap class with the JUnit runner</td>
+					<td> The output from the two grep commands and seven diff commands should be blank.</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 96 </td>
+					<td> 6.11.1</td>
+					<td> Maps input reads_r72_sdf SDF with -w 25 and -T 1</td>
+					<td> 5.2.2 </td>
+					<td> Run the RTG_longSEmap_r72_w12 method in the  testRTG_long_se_map class with the JUnit runner<span style="display:none" concordion:set="#script"> testRTG_long_se_map.class</span></td>
+					<td> The output from the two grep commands and four diff commands should be blank.<span style="display:none" concordion:set="#exOut">'OK (12 tests)'</span></td>
+					<td rowspan="12" concordion:assert-equals="runTest_CheckOutput(#script,#exOut)" class="success">P</td>
+					<td> </td>
+					<td rowspan="12"> </td>
+				</tr>
+				<tr>
+					<td> 97 </td>
+					<td> 6.11.1 </td>
+					<td> Maps input reads_r72_sdf SDF with -w 18 and -T 1</td>
+					<td> 5.2.2 </td>
+					<td> Run the RTG_longSEmap_r72_w18 method in the  testRTG_long_se_map class with the JUnit runner</td>
+					<td> The output from the two grep commands and four diff commands should be blank.</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 98 </td>
+					<td> 6.11.1 </td>
+					<td> Maps input reads_r72_sdf SDF with -w 25 and -T 1</td>
+					<td> 5.2.2 </td>
+					<td> Run the RTG_longSEmap_r72_w25 method in the  testRTG_long_se_map class with the JUnit runner</td>
+					<td> The output from the two grep commands and four diff commands should be blank.</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 99 </td>
+					<td> 6.11.1 </td>
+					<td> Maps input reads_r72_sdf SDF with -w 25 and -T 4, has -start and end read flags</td>
+					<td> 5.2.2 </td>
+					<td> Run the RTG_longRAMSE_r72 method in the  testRTG_long_se_map class with the JUnit runner</td>
+					<td> The output from the two grep commands and two diff commands should be blank.</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 100 </td>
+					<td> 6.11.1 </td>
+					<td> Maps input reads_r100_sdf SDF with -w 12 and -T 1</td>
+					<td> 5.2.2 </td>
+					<td> Run the RTG_longSEmap_r100_w12 method in the  testRTG_long_se_map class with the JUnit runner</td>
+					<td> The output from the two grep commands and four diff commands should be blank.</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 101 </td>
+					<td> 6.11.1 </td>
+					<td> Maps input reads_r100_sdf SDF with -w 18 and -T 1</td>
+					<td> 5.2.2 </td>
+					<td> Run the RTG_longSEmap_r100_w18 method in the  testRTG_long_se_map class with the JUnit runner</td>
+					<td> The output from the two grep commands and four diff commands should be blank.</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 102 </td>
+					<td> 6.11.1 </td>
+					<td> Maps input reads_r100_sdf SDF with -w 25 and -T 1</td>
+					<td> 5.2.2 </td>
+					<td> Run the RTG_longSEmap_r100_w25 method in the  testRTG_long_se_map class with the JUnit runner</td>
+					<td> The output from the two grep commands and four diff commands should be blank.</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 103 </td>
+					<td> 6.11.1 </td>
+					<td> Maps input reads_r100_sdf SDF with -w 25 and -T 4, has -start and end read flags</td>
+					<td> 5.2.2 </td>
+					<td> Run the RTG_longRAMSE_r100 method in the  testRTG_long_se_map class with the JUnit runner</td>
+					<td> The output from the two grep commands and two diff commands should be blank.</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 104 </td>
+					<td> 6.11.1 </td>
+					<td> Attempts to Map a mis-matched sam, with unknowns-penalty set to 9, and aligner-mode set to general</td>
+					<td> 5.2.2 </td>
+					<td> Run the RTG_n_as_mismatch method in the  testRTG_long_se_map class with the JUnit runner</td>
+					<td> The output from the grep command and diff command should be blank.</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 105 </td>
+					<td> 6.11.1 </td>
+					<td> Attempts to Map a mis-matched sam</td>
+					<td> 5.2.2 </td>
+					<td> Run the RTG_n_as_mismatch_2 method in the  testRTG_long_se_map class with the JUnit runner</td>
+					<td> The output from the grep command and diff command should be blank.</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 106 </td>
+					<td> 6.11.1 </td>
+					<td> Maps a SDF with sex set to male and output as sam</td>
+					<td> 5.2.2 </td>
+					<td> Run the RTG_longRAMSE_sex method in the  testRTG_long_se_map class with the JUnit runner</td>
+					<td> The output from the two grep commands and four diff commands should be blank.</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 107 </td>
+					<td> 6.11.1 </td>
+					<td> Maps a SDF with sex set to male and output as bam</td>
+					<td> 5.2.2 </td>
+					<td> Run the RTG_longRAMSE_sex_bam method in the  testRTG_long_se_map class with the JUnit runner</td>
+					<td> The output from the two grep commands and four diff commands should be blank.</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 108 </td>
+					<td> 6.11.1</td>
+					<td> Generate simulated data, map with -a 1</td>
+					<td> 5.2.2 </td>
+					<td> Run the RTG_shortPE_a1 method in the  testRTG_short_pe_map class with the JUnit runner<span style="display:none" concordion:set="#script"> testRTG_short_pe_map.class</span></td>
+					<td> The output from the two grep commands and five java commands should be blank.<span style="display:none" concordion:set="#exOut">'OK (2 tests)'</span></td>
+					<td rowspan="2" concordion:assert-equals="runTest_CheckOutput(#script,#exOut)" class="success">P</td>
+					<td> </td>
+					<td rowspan="2"> </td>
+				</tr>
+				<tr>
+					<td> 109 </td>
+					<td> 6.11.1 </td>
+					<td> Generate simulated data, map with -a 2</td>
+					<td> 5.2.2 </td>
+					<td> Run the RTG_shortPE_a2 method in the  testRTG_short_pe_map class with the JUnit runner</td>
+					<td> The output from the two grep commands and five java commands should be blank.</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 110 </td>
+					<td> 6.11.1</td>
+					<td> Generate genomesim and readsim data with -r 36, map resulting data with -w 9</td>
+					<td> 5.2.2 </td>
+					<td> Run the RTG_ShortSE_r36_w9 method in the  testRTG_short_se_map class with the JUnit runner<span style="display:none" concordion:set="#script"> testRTG_short_se_map.class</span></td>
+					<td> The output from the two grep commands and java command should be blank.<span style="display:none" concordion:set="#exOut">'OK (8 tests)'</span></td>
+					<td rowspan="8" concordion:assert-equals="runTest_CheckOutput(#script,#exOut)" class="success">P</td>
+					<td> </td>
+					<td rowspan="8"> </td>
+				</tr>
+				<tr>
+					<td> 111 </td>
+					<td> 6.11.1 </td>
+					<td> Generate genomesim and readsim data with -r 36, map resulting data with -w 12</td>
+					<td> 5.2.2 </td>
+					<td> Run the RTG_ShortSE_r36_w12 method in the  testRTG_short_se_map class with the JUnit runner</td>
+					<td> The output from the two grep commands and java command should be blank.</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 112 </td>
+					<td> 6.11.1 </td>
+					<td> Generate genomesim and readsim data with -r 36, map resulting data with -w 16</td>
+					<td> 5.2.2 </td>
+					<td> Run the RTG_ShortSE_r36_w16 method in the  testRTG_short_se_map class with the JUnit runner</td>
+					<td> The output from the two grep commands and java command should be blank.</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 113 </td>
+					<td> 6.11.1 </td>
+					<td> Generate genomesim and readsim data with -r 36, map resulting data with -w 25</td>
+					<td> 5.2.2 </td>
+					<td> Run the RTG_ShortSE_r36_w25 method in the  testRTG_short_se_map class with the JUnit runner</td>
+					<td> The output from the two grep commands and java command should be blank.</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 113 </td>
+					<td> 6.11.1 </td>
+					<td> Generate genomesim and readsim data with -r 50, map resulting data with -w 9</td>
+					<td> 5.2.2 </td>
+					<td> Run the RTG_ShortSE_r50_w9 method in the  testRTG_short_se_map class with the JUnit runner</td>
+					<td> The output from the two grep commands and java command should be blank.</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 114 </td>
+					<td> 6.11.1 </td>
+					<td> Generate genomesim and readsim data with -r 50, map resulting data with -w 12</td>
+					<td> 5.2.2 </td>
+					<td> Run the RTG_ShortSE_r50_w12 method in the  testRTG_short_se_map class with the JUnit runner</td>
+					<td> The output from the two grep commands and java command should be blank.</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 115 </td>
+					<td> 6.11.1 </td>
+					<td> Generate genomesim and readsim data with -r 50, map resulting data with -w 16</td>
+					<td> 5.2.2 </td>
+					<td> Run the RTG_ShortSE_r50_w16 method in the  testRTG_short_se_map class with the JUnit runner</td>
+					<td> The output from the two grep commands and java command should be blank.</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 116 </td>
+					<td> 6.11.1 </td>
+					<td> Generate genomesim and readsim data with -r 50, map resulting data with -w 25</td>
+					<td> 5.2.2 </td>
+					<td> Run the RTG_ShortSE_r50_w25 method in the  testRTG_short_se_map class with the JUnit runner</td>
+					<td> The output from the two grep commands and java command should be blank.</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 117 </td>
+					<td> 6.11.1</td>
+					<td> Input mated and unmated Sam files, generate a VCF</td>
+					<td> 5.2.2 </td>
+					<td> Run the RTG_indel_vcf_1 method in the  testRTG_indel_vcf class with the JUnit runner<span style="display:none" concordion:set="#script"> testRTG_indel_vcf.class</span></td>
+					<td> The output from the six diff commands should be blank.<span style="display:none" concordion:set="#exOut">'OK (4 tests)'</span></td>
+					<td rowspan="4" concordion:assert-equals="runTest_CheckOutput(#script,#exOut)" class="success">P</td>
+					<td> </td>
+					<td rowspan="4"> </td>
+				</tr>
+				<tr>
+					<td> 118 </td>
+					<td> 6.11.1 </td>
+					<td> Input mated and unmated Sam files, generate a VCF</td>
+					<td> 5.2.2 </td>
+					<td> Run the RTG_indel_vcf_2 method in the  testRTG_indel_vcf class with the JUnit runner</td>
+					<td> The output from the six diff commands should be blank.</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 119 </td>
+					<td> 6.11.1 </td>
+					<td> Input mated and unmated Sam files, generate a VCF</td>
+					<td> 5.2.2 </td>
+					<td> Run the RTG_indel_vcf_3 method in the  testRTG_indel_vcf class with the JUnit runner</td>
+					<td> The output from the six diff commands should be blank.</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 120 </td>
+					<td> 6.11.1 </td>
+					<td> Input mated and unmated Sam files, generate a VCF</td>
+					<td> 5.2.2 </td>
+					<td> Run the RTG_indel_vcf_4 method in the  testRTG_indel_vcf class with the JUnit runner</td>
+					<td> The output from the six diff commands should be blank.</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 121 </td>
+					<td> 6.11.1</td>
+					<td> Subset a supplied SDF </td>
+					<td> 5.2.2 </td>
+					<td> Run the RTG_sdf_subset method in the  testRTG_sdfsubset class with the JUnit runner<span style="display:none" concordion:set="#script"> testRTG_sdfsubset.class</span></td>
+					<td> The output from the diff command should be blank.<span style="display:none" concordion:set="#exOut">'OK (1 test)'</span></td>
+					<td concordion:assert-equals="runTest_CheckOutput(#script,#exOut)" class="success">P</td>
+					<td> </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 122 </td>
+					<td> 6.11.1</td>
+					<td> run sdfsubseq on a supplied SDF </td>
+					<td> 5.2.2 </td>
+					<td> Run the RTG_sdf_subseq method in the  testRTG_sdfsubseq class with the JUnit runner<span style="display:none" concordion:set="#script"> testRTG_sdfsubseq.class</span></td>
+					<td> The output from the two diff commands should be blank.<span style="display:none" concordion:set="#exOut">'OK (1 test)'</span></td>
+					<td concordion:assert-equals="runTest_CheckOutput(#script,#exOut)" class="success">P</td>
+					<td> </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 123 </td>
+					<td> 6.11.1</td>
+					<td> Generate a sam file from simulated data </td>
+					<td> 5.2.2 </td>
+					<td> Run the RTG_sdfreader_testLongTempSam method in the  testRTG_sdfreader class with the JUnit runner<span style="display:none" concordion:set="#script"> testRTG_sdfreader.class</span></td>
+					<td> The output from the grep command should be blank.<span style="display:none" concordion:set="#exOut">'OK (1 test)'</span></td>
+					<td concordion:assert-equals="runTest_CheckOutput(#script,#exOut)" class="success">P</td>
+					<td> </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 124 </td>
+					<td> 6.11.1</td>
+					<td> Convert a template SAM to BAM and back </td>
+					<td> 5.2.2 </td>
+					<td> Run the RTG_sdfreader_testLongTempSam method in the  testRTG_sam2bam class with the JUnit runner<span style="display:none" concordion:set="#script"> testRTG_sam2bam.class</span></td>
+					<td> The output from the diff command should be blank.<span style="display:none" concordion:set="#exOut">'OK (1 test)'</span></td>
+					<td concordion:assert-equals="runTest_CheckOutput(#script,#exOut)" class="success">P</td>
+					<td> </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 125 </td>
+					<td> 6.11.1</td>
+					<td> Merge together four Sam files and filter </td>
+					<td> 5.2.2 </td>
+					<td> Run the RTG_sammerge method in the testRTG_sammerge class with the JUnit runner<span style="display:none" concordion:set="#script"> testRTG_sammerge.class</span></td>
+					<td> The output from the seven diff commands should be blank.<span style="display:none" concordion:set="#exOut">'OK (2 tests)'</span></td>
+					<td rowspan="2" concordion:assert-equals="runTest_CheckOutput(#script,#exOut)" class="success">P</td>
+					<td> </td>
+					<td rowspan="2"> </td>
+				</tr>
+				<tr>
+					<td> 126 </td>
+					<td> 6.11.1 </td>
+					<td> Merge together two Sam files</td>
+					<td> 5.2.2 </td>
+					<td> Run the RTG_sammerge_cal method in the testRTG_sammerge class with the JUnit runner</td>
+					<td> The output from the two diff commands should be blank.</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 127 </td>
+					<td> 6.11.1</td>
+					<td> Rename a single Sam file </td>
+					<td> 5.2.2 </td>
+					<td> Run the RTG_sam_rename_tiny method in the testRTG_samrename class with the JUnit runner<span style="display:none" concordion:set="#script"> testRTG_samrename.class</span></td>
+					<td> The output from the diff command should be blank.<span style="display:none" concordion:set="#exOut">'OK (2 tests)'</span></td>
+					<td rowspan="2" concordion:assert-equals="runTest_CheckOutput(#script,#exOut)" class="success">P</td>
+					<td> </td>
+					<td rowspan="2"> </td>
+				</tr>
+				<tr>
+					<td> 128 </td>
+					<td> 6.11.1 </td>
+					<td> Rename a paired Sam file </td>
+					<td> 5.2.2 </td>
+					<td> Run the RTG_sam_rename_tiny_paired method in the testRTG_samrename class with the JUnit runner</td>
+					<td> The output from the diff command should be blank.</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 129 </td>
+					<td> 6.11.1</td>
+					<td> Subset a VCF, but keep formatting and info</td>
+					<td> 5.2.2 </td>
+					<td> Run the RTG_vcfsubset_small method in the  testRTG_vcfsubset_small class with the JUnit runner<span style="display:none" concordion:set="#script"> testRTG_vcfsubset_small.class</span></td>
+					<td> The output from the diff command and java command should be blank.<span style="display:none" concordion:set="#exOut">'OK (1 test)'</span></td>
+					<td concordion:assert-equals="runTest_CheckOutput(#script,#exOut)" class="success">P</td>
+					<td> </td>
+					<td> </td>
+				</tr>
+				<tr bgcolor="#F1EBA0"><td colspan="9"><b>Functionality Section 12. Custom R Code Runit tests</b></td></tr>
+				<tr>
+					<td> 130 </td>
+					<td> 6.12.1, 6.12.2 </td>
+					<td> Run the Runit Tests the custom TakedaCode package</td>
+					<td> 5.2.3, 5.2.5 </td>
+					<td> Run the R_TakedaCode_UnitTests method in the testR_unitTests class with the JUnit runner<span style="display:none" concordion:set="#script">testR_unitTests.class</span></td>
+					<td> The output from the two diff commands and java command should be blank<span style="display:none" concordion:set="#exOut">'OK (2 tests)'</span></td>
+					<td rowspan="2" concordion:assert-equals="runTest_CheckOutput(#script,#exOut)" class="success">P</td>
+					<td> </td>
+					<td rowspan="2"> </td>
+				</tr>
+				<tr>
+					<td> 131 </td>
+					<td> 6.12.1, 6.12.2 </td>
+					<td> Run the Runit Tests the custom NanoStringNorm package </td>
+					<td> 5.2.3, 5.2.5 </td>
+					<td> Run the R_NanoStringNorm_UnitTests method in the testR_unitTests class with the JUnit runner</td>
+					<td> The output from the diff command should be blank.</td>
+					<td> </td>
+				</tr>
+				<tr bgcolor="#F1EBA0"><td colspan="9"><b>Functionality Section 13. Testing Unit testing system unit tests</b></td></tr>
+				<tr>
+					<td> 132 </td>
+					<td>  </td>
+					<td> Test that assert equals passes and fails when it should</td>
+					<td> n/a </td>
+					<td> Run the test_assertEquals method in the testJUnit_Framework class with the JUnit runner<span style="display:none" concordion:set="#script">testJUnit_Framework.class</span></td>
+					<td> The output from the findStringInFile method should return TRUE<span style="display:none" concordion:set="#exOut">'OK (6 tests)'</span></td>
+					<td rowspan="6" concordion:assert-equals="runTest_CheckOutput(#script,#exOut)" class="success">P</td>
+					<td> </td>
+					<td rowspan="6"> </td>
+				</tr>
+				<tr>
+					<td> 133 </td>
+					<td> </td>
+					<td> Test that runCommands method in CommandToShell class will run the system command(s) properly </td>
+					<td> n/a </td>
+					<td> Run the test_CommandToShell_runCommands method in the testJUnit_Framework class with the JUnit runner</td>
+					<td> Both assertEquals statements should pass, indicating output was as expected.</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 134 </td>
+					<td> </td>
+					<td> Test that catchOutput method in CommandToShell class will run the system command and capture the stdout </td>
+					<td> n/a </td>
+					<td> Run the test_CommandToShell_catchOutput method in the testJUnit_Framework class with the JUnit runner</td>
+					<td> Both assert statements should pass, indicating output was as expected.</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 135 </td>
+					<td> </td>
+					<td> Test that catchError method in CommandToShell class will run the system command and capture the sterr </td>
+					<td> n/a </td>
+					<td> Run the test_CommandToShell_catchError method in the testJUnit_Framework class with the JUnit runner</td>
+					<td> Both assert statements should pass, indicating output was as expected.</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 136 </td>
+					<td> </td>
+					<td> Test that findStringInFile method in CommandToShell class will seach the specified file and indicate if the string(s) is in the file</td>
+					<td> n/a </td>
+					<td> Run the test_CommandToShell_findStringInFile method in the testJUnit_Framework class with the JUnit runner</td>
+					<td> Both assert statements should pass, indicating output was as expected.</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 137 </td>
+					<td> </td>
+					<td> Test that ignoreStringInFile method in CommandToShell class will seach the specified file and indicate if string other than the string(s) specified is in the file</td>
+					<td> n/a </td>
+					<td> Run the test_CommandToShell_ignoreStringInFile method in the testJUnit_Framework class with the JUnit runner</td>
+					<td> Both assert statements should pass, indicating output was as expected.</td>
+					<td> </td>
+				</tr>
+				<tr bgcolor="#F1EBA0"><td colspan="9"><b>Functionality Section 14. RTG tests for Metagenomics commands</b></td></tr>
+				<tr>
+					<td> 138 </td>
+					<td>  </td>
+					<td> Generate an E.coli sdf from a contaminated human sample sdf</td>
+					<td> n/a </td>
+					<td> Run the RTG_ecoli_mapf method in the testRTG_ecoli_mapf class with the JUnit runner<span style="display:none" concordion:set="#script">testRTG_ecoli_mapf.class</span></td>
+					<td>  The output from two grep commands and three diff commands should be blank, and the two test commands should indicate the files exists.<span style="display:none" concordion:set="#exOut">'OK (4 tests)'</span></td>
+					<td rowspan="4" concordion:assert-equals="runTest_CheckOutput(#script,#exOut)" class="success">P</td>
+					<td> </td>
+					<td rowspan="4"> </td>
+				</tr>
+				<tr>
+					<td> 139 </td>
+					<td> </td>
+					<td> Generate an E.coli bam file from a contaminated human sample sdf </td>
+					<td> n/a </td>
+					<td> Run the RTG_ecoli_mapf_bam method in the testRTG_ecoli_mapf class with the JUnit runner</td>
+					<td> The output from two grep commands and three diff commands should be blank.</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 140 </td>
+					<td> </td>
+					<td> Generate a E.coli paired sam files from a contaminated human sample sdf </td>
+					<td> n/a </td>
+					<td> Run the RTG_ecoli_mapf_paired method in the testRTG_ecoli_mapf class with the JUnit runner</td>
+					<td> The output from two grep commands and three diff commands should be blank, and the eight test commands should indicate the files exists.</td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 141 </td>
+					<td> </td>
+					<td> Generate a E.coli paired bam files from a contaminated human sample sdf </td>
+					<td> n/a </td>
+					<td> Run the RTG_ecoli_mapf_paired_bam method in the testRTG_ecoli_mapf class with the JUnit runner</td>
+					<td> The output from grep command, diff command and two java commands should be blank.</td>
+					<td> </td>
+				</tr>
+				<tr bgcolor="#F1EBA0"><td colspan="9"><b>Functionality Section 15. PINDEL Tests</b></td></tr>
+				<tr>
+					<td> 142 </td>
+					<td>  </td>
+					<td> Test PINDEL ability to consistently call indels</td>
+					<td> n/a </td>
+					<td> Run the PINDEL_goldstandard method in the testPINDEL class with the JUnit runner<span style="display:none" concordion:set="#script">testPINDEL.class</span></td>
+					<td>  The output from diff command of folder should be blank.<span style="display:none" concordion:set="#exOut">'OK (1 test)'</span></td>
+					<td rowspan="1" concordion:assert-equals="runTest_CheckOutput(#script,#exOut)" class="success">P</td>
+					<td> </td>
+					<td rowspan="1"> </td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<div class="footer">Results generated by <a href="http://www.concordion.org" style="font-weight: bold; text-decoration: none; color: #89C;">Concordion</a><div class="testTime">in 1521468 ms on 13-Mar-2017 at 18:37:47 UTC</div></div></body>
+</html>

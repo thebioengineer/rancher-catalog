@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="a493f14f8311" name="NGSPipeline_TableFixture" skipped="0" tests="1" time="1594.886" timestamp="2017-03-27T17:56:39">
+  <properties>
+    <property name="ant.project.invoked-targets" value="runtests" />
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment" />
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64" />
+    <property name="java.vm.version" value="24.121-b00" />
+    <property name="ant.file.NGS Pipeline Unit Tests" value="/app/ValidationUnitTests/build/build.xml" />
+    <property name="ant.library.dir" value="/usr/share/ant/lib" />
+    <property name="ant.version" value="Apache Ant(TM) version 1.9.4 compiled on October 7 2014" />
+    <property name="ant.java.version" value="1.7" />
+    <property name="java.vm.vendor" value="Oracle Corporation" />
+    <property name="java.vendor.url" value="http://java.oracle.com/" />
+    <property name="path.separator" value=":" />
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM" />
+    <property name="file.encoding.pkg" value="sun.io" />
+    <property name="user.country" value="US" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="sun.os.patch.level" value="unknown" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="user.dir" value="/data/RTGTest/docker/Reports/bin" />
+    <property name="java.runtime.version" value="1.7.0_121-b00" />
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment" />
+    <property name="basedir" value="/data/RTGTest/docker/Reports" />
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/endorsed" />
+    <property name="os.arch" value="amd64" />
+    <property name="ant.project.default-target" value="runtests" />
+    <property name="java.io.tmpdir" value="/tmp" />
+    <property name="ant.core.lib" value="/usr/share/ant/lib/ant.jar" />
+    <property name="line.separator" value="&#xa;" />
+    <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+    <property name="os.name" value="Linux" />
+    <property name="ant.home" value="/usr/share/ant" />
+    <property name="ant.project.name" value="NGS Pipeline Unit Tests" />
+    <property name="sun.jnu.encoding" value="UTF-8" />
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="java.class.version" value="51.0" />
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+    <property name="os.version" value="4.1.27-27-default" />
+    <property name="ant.file" value="/app/ValidationUnitTests/build/build.xml" />
+    <property name="user.home" value="/root" />
+    <property name="user.timezone" value="" />
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob" />
+    <property name="java.specification.version" value="1.7" />
+    <property name="file.encoding" value="UTF-8" />
+    <property name="user.name" value="root" />
+    <property name="java.class.path" value="/data/RTGTest/docker/Reports/lib:/data/RTGTest/docker/Reports/lib/concordion-2.0.1.jar:/data/RTGTest/docker/Reports/lib/hamcrest-core-1.3.jar:/data/RTGTest/docker/Reports/lib/javassist-3.11.0.GA.jar:/data/RTGTest/docker/Reports/lib/junit4-4.11.jar:/data/RTGTest/docker/Reports/lib/ognl-3.1.jar:/data/RTGTest/docker/Reports/lib/parboiled-core-1.1.7.jar:/data/RTGTest/docker/Reports/lib/pegdown-1.6.0.jar:/data/RTGTest/docker/Reports/lib/xom-1.2.5.jar:/data/RTGTest/docker/Reports/bin:/usr/share/ant/lib/junit.jar:/usr/share/java/ant-launcher-1.9.4.jar:/usr/share/ant/lib/ant.jar:/usr/share/ant/lib/ant-junit.jar:/usr/share/ant/lib/ant-junit4.jar" />
+    <property name="ant.file.type.NGS Pipeline Unit Tests" value="file" />
+    <property name="java.vm.specification.version" value="1.7" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner NGSPipeline_TableFixture skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.OutErrSummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/data/RTGTest/docker/Reports/TEST-NGSPipeline_TableFixture.xml formatter=org.apache.tools.ant.taskdefs.optional.junit.PlainJUnitResultFormatter,/data/RTGTest/docker/Reports/TEST-NGSPipeline_TableFixture.txt crashfile=/data/RTGTest/docker/Reports/junitvmwatcher5006994355668370304.properties propsfile=/data/RTGTest/docker/Reports/junit5726976046959119754.properties" />
+    <property name="sun.arch.data.model" value="64" />
+    <property name="java.home" value="/usr/lib/jvm/java-7-openjdk-amd64/jre" />
+    <property name="java.specification.vendor" value="Oracle Corporation" />
+    <property name="user.language" value="en" />
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit" />
+    <property name="java.vm.info" value="mixed mode" />
+    <property name="java.version" value="1.7.0_121" />
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/ext:/usr/java/packages/lib/ext" />
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/rhino.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/classes" />
+    <property name="java.vendor" value="Oracle Corporation" />
+    <property name="file.separator" value="/" />
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="ant.file.type" value="file" />
+    <property name="sun.cpu.isalist" value="" />
+  </properties>
+  <testcase classname="NGSPipeline_TableFixture" name="WholeSystemValidation" time="1594.635" />
+  <system-out><![CDATA[[JUnit version 4.11, ., Time: 0.032, , OK (1 test), ]
+[JUnit version 4.11, .., Time: 0.179, , OK (2 tests), ]
+[JUnit version 4.11, ., Time: 0.59, , OK (1 test), ]
+[JUnit version 4.11, ...., Time: 82.62, , OK (4 tests), ]
+[JUnit version 4.11, ..., Time: 116.268, , OK (3 tests), ]
+[JUnit version 4.11, ....., Time: 159.957, , OK (5 tests), ]
+[JUnit version 4.11, ..., Time: 90.502, , OK (3 tests), ]
+[JUnit version 4.11, .., Time: 11.479, , OK (2 tests), ]
+[JUnit version 4.11, ......., Time: 42.228, , OK (7 tests), ]
+[JUnit version 4.11, ..., Time: 26.808, , OK (3 tests), ]
+[JUnit version 4.11, ..., Time: 25.353, , OK (3 tests), ]
+[JUnit version 4.11, ...., Time: 148.651, , OK (4 tests), ]
+[JUnit version 4.11, ., Time: 31.173, , OK (1 test), ]
+[JUnit version 4.11, ., Time: 7.581, , OK (1 test), ]
+[JUnit version 4.11, ...., Time: 6.527, , OK (4 tests), ]
+[JUnit version 4.11, .., Time: 6.756, , OK (2 tests), ]
+[JUnit version 4.11, ...., Time: 34.91, , OK (4 tests), ]
+[JUnit version 4.11, ., Time: 4.54, , OK (1 test), ]
+[JUnit version 4.11, ., Time: 20.134, , OK (1 test), ]
+[JUnit version 4.11, ., Time: 0.846, , OK (1 test), ]
+[JUnit version 4.11, ....., Time: 9.777, , OK (5 tests), ]
+[JUnit version 4.11, ...., Time: 94.993, , OK (4 tests), ]
+[JUnit version 4.11, .........., Time: 121.15, , OK (10 tests), ]
+[JUnit version 4.11, ..., Time: 5.324, , OK (3 tests), ]
+[JUnit version 4.11, ............, Time: 163.854, , OK (12 tests), ]
+[JUnit version 4.11, ............, Time: 50.515, , OK (12 tests), ]
+[JUnit version 4.11, .., Time: 60.351, , OK (2 tests), ]
+[JUnit version 4.11, ........, Time: 61.584, , OK (8 tests), ]
+[JUnit version 4.11, ...., Time: 38.242, , OK (4 tests), ]
+[JUnit version 4.11, ., Time: 1.806, , OK (1 test), ]
+[JUnit version 4.11, ., Time: 1.725, , OK (1 test), ]
+[JUnit version 4.11, ., Time: 4.757, , OK (1 test), ]
+[JUnit version 4.11, ., Time: 1.902, , OK (1 test), ]
+[JUnit version 4.11, .., Time: 5.278, , OK (2 tests), ]
+[JUnit version 4.11, .., Time: 1.793, , OK (2 tests), ]
+[JUnit version 4.11, ., Time: 2.707, , OK (1 test), ]
+[JUnit version 4.11, .., Time: 9.132, , OK (2 tests), ]
+[JUnit version 4.11, ......, Time: 1.503, , OK (6 tests), ]
+[JUnit version 4.11, ...., Time: 43.459, , OK (4 tests), ]
+[JUnit version 4.11, ., Time: 83.641, , OK (1 test), ]
+
+file:///tmp/concordion/NGSPipeline_Table.html#WholeSystemValidation
+Successes: 40, Failures: 0
+
+file:///tmp/concordion/NGSPipeline_Table.html
+Successes: 40, Failures: 0
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

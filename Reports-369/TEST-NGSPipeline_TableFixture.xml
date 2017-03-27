@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="1" hostname="7124c5167c84" name="NGSPipeline_TableFixture" skipped="0" tests="1" time="1433.675" timestamp="2017-03-18T10:12:33">
+  <properties>
+    <property name="ant.project.invoked-targets" value="runtests" />
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment" />
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64" />
+    <property name="java.vm.version" value="24.121-b00" />
+    <property name="ant.file.NGS Pipeline Unit Tests" value="/app/ValidationUnitTests/build/build.xml" />
+    <property name="ant.library.dir" value="/usr/share/ant/lib" />
+    <property name="ant.version" value="Apache Ant(TM) version 1.9.4 compiled on October 7 2014" />
+    <property name="ant.java.version" value="1.7" />
+    <property name="java.vm.vendor" value="Oracle Corporation" />
+    <property name="java.vendor.url" value="http://java.oracle.com/" />
+    <property name="path.separator" value=":" />
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM" />
+    <property name="file.encoding.pkg" value="sun.io" />
+    <property name="user.country" value="US" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="sun.os.patch.level" value="unknown" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="user.dir" value="/data/RTGTest/docker/Reports/bin" />
+    <property name="java.runtime.version" value="1.7.0_121-b00" />
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment" />
+    <property name="basedir" value="/data/RTGTest/docker/Reports" />
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/endorsed" />
+    <property name="os.arch" value="amd64" />
+    <property name="ant.project.default-target" value="runtests" />
+    <property name="java.io.tmpdir" value="/tmp" />
+    <property name="ant.core.lib" value="/usr/share/ant/lib/ant.jar" />
+    <property name="line.separator" value="&#xa;" />
+    <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+    <property name="os.name" value="Linux" />
+    <property name="ant.home" value="/usr/share/ant" />
+    <property name="ant.project.name" value="NGS Pipeline Unit Tests" />
+    <property name="sun.jnu.encoding" value="UTF-8" />
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="java.class.version" value="51.0" />
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+    <property name="os.version" value="4.1.27-27-default" />
+    <property name="ant.file" value="/app/ValidationUnitTests/build/build.xml" />
+    <property name="user.home" value="/root" />
+    <property name="user.timezone" value="" />
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob" />
+    <property name="java.specification.version" value="1.7" />
+    <property name="file.encoding" value="UTF-8" />
+    <property name="user.name" value="root" />
+    <property name="java.class.path" value="/data/RTGTest/docker/Reports/lib:/data/RTGTest/docker/Reports/lib/concordion-2.0.1.jar:/data/RTGTest/docker/Reports/lib/hamcrest-core-1.3.jar:/data/RTGTest/docker/Reports/lib/javassist-3.11.0.GA.jar:/data/RTGTest/docker/Reports/lib/junit4-4.11.jar:/data/RTGTest/docker/Reports/lib/ognl-3.1.jar:/data/RTGTest/docker/Reports/lib/parboiled-core-1.1.7.jar:/data/RTGTest/docker/Reports/lib/pegdown-1.6.0.jar:/data/RTGTest/docker/Reports/lib/xom-1.2.5.jar:/data/RTGTest/docker/Reports/bin:/usr/share/ant/lib/junit.jar:/usr/share/java/ant-launcher-1.9.4.jar:/usr/share/ant/lib/ant.jar:/usr/share/ant/lib/ant-junit.jar:/usr/share/ant/lib/ant-junit4.jar" />
+    <property name="ant.file.type.NGS Pipeline Unit Tests" value="file" />
+    <property name="java.vm.specification.version" value="1.7" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner NGSPipeline_TableFixture skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.OutErrSummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/data/RTGTest/docker/Reports/TEST-NGSPipeline_TableFixture.xml formatter=org.apache.tools.ant.taskdefs.optional.junit.PlainJUnitResultFormatter,/data/RTGTest/docker/Reports/TEST-NGSPipeline_TableFixture.txt crashfile=/data/RTGTest/docker/Reports/junitvmwatcher2746795294637589975.properties propsfile=/data/RTGTest/docker/Reports/junit6978790791611978734.properties" />
+    <property name="sun.arch.data.model" value="64" />
+    <property name="java.home" value="/usr/lib/jvm/java-7-openjdk-amd64/jre" />
+    <property name="java.specification.vendor" value="Oracle Corporation" />
+    <property name="user.language" value="en" />
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit" />
+    <property name="java.vm.info" value="mixed mode" />
+    <property name="java.version" value="1.7.0_121" />
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/ext:/usr/java/packages/lib/ext" />
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/rhino.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/classes" />
+    <property name="java.vendor" value="Oracle Corporation" />
+    <property name="file.separator" value="/" />
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="ant.file.type" value="file" />
+    <property name="sun.cpu.isalist" value="" />
+  </properties>
+  <testcase classname="NGSPipeline_TableFixture" name="WholeSystemValidation" time="1433.438">
+    <failure message="Specification has failure(s). See output HTML for details." type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Specification has failure(s). See output HTML for details.
+	at org.concordion.internal.ImplementationStatusChecker$3.assertIsSatisfied(ImplementationStatusChecker.java:101)
+	at org.concordion.internal.SummarizingResultRecorder.assertIsSatisfied(SummarizingResultRecorder.java:45)
+	at org.concordion.internal.FixtureRunner.printResultSummary(FixtureRunner.java:79)
+	at org.concordion.internal.FixtureRunner.run(FixtureRunner.java:67)
+	at org.concordion.integration.junit4.ConcordionRunner.invoke(ConcordionRunner.java:203)
+	at org.concordion.integration.junit4.ConcordionRunner$1.invoke(ConcordionRunner.java:31)
+	at org.concordion.integration.junit4.ConcordionFrameworkMethod.invokeExplosively(ConcordionFrameworkMethod.java:58)
+	at org.concordion.integration.junit4.ConcordionRunner.runChild(ConcordionRunner.java:187)
+	at org.concordion.integration.junit4.ConcordionRunner.runChild(ConcordionRunner.java:23)
+	at org.concordion.integration.junit4.ConcordionRunner.run(ConcordionRunner.java:146)
+</failure>
+  </testcase>
+  <system-out><![CDATA[[JUnit version 4.11, ., Time: 0.203, , OK (1 test), ]
+[JUnit version 4.11, .., Time: 0.63, , OK (2 tests), ]
+[JUnit version 4.11, ., Time: 0.876, , OK (1 test), ]
+[JUnit version 4.11, ..E.E., Time: 4.841, There were 2 failures:, 1) SNPEffv3_3Annotation(testSNPEff), java.lang.AssertionError: Diff is not blank expected:<true> but was:<false>, 	at org.junit.Assert.fail(Assert.java:88), 	at org.junit.Assert.failNotEquals(Assert.java:743), 	at org.junit.Assert.assertEquals(Assert.java:118), 	at testSNPEff.SNPEffv3_3Annotation(Unknown Source), 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method), 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57), 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43), 	at java.lang.reflect.Method.invoke(Method.java:606), 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47), 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12), 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44), 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17), 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271), 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70), 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50), 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238), 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63), 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236), 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53), 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229), 	at org.junit.runners.ParentRunner.run(ParentRunner.java:309), 	at org.junit.runners.Suite.runChild(Suite.java:127), 	at org.junit.runners.Suite.runChild(Suite.java:26), 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238), 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63), 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236), 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53), 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229), 	at org.junit.runners.ParentRunner.run(ParentRunner.java:309), 	at org.junit.runner.JUnitCore.run(JUnitCore.java:160), 	at org.junit.runner.JUnitCore.run(JUnitCore.java:138), 	at org.junit.runner.JUnitCore.run(JUnitCore.java:117), 	at org.junit.runner.JUnitCore.runMain(JUnitCore.java:96), 	at org.junit.runner.JUnitCore.runMainAndExit(JUnitCore.java:47), 	at org.junit.runner.JUnitCore.main(JUnitCore.java:40), 2) SNPEffAnnotation(testSNPEff), java.lang.AssertionError: Output from 'VCFContentsComparator.py' is not blank expected:<true> but was:<false>, 	at org.junit.Assert.fail(Assert.java:88), 	at org.junit.Assert.failNotEquals(Assert.java:743), 	at org.junit.Assert.assertEquals(Assert.java:118), 	at testSNPEff.SNPEffAnnotation(Unknown Source), 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method), 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57), 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43), 	at java.lang.reflect.Method.invoke(Method.java:606), 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47), 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12), 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44), 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17), 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271), 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70), 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50), 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238), 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63), 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236), 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53), 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229), 	at org.junit.runners.ParentRunner.run(ParentRunner.java:309), 	at org.junit.runners.Suite.runChild(Suite.java:127), 	at org.junit.runners.Suite.runChild(Suite.java:26), 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238), 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63), 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236), 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53), 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229), 	at org.junit.runners.ParentRunner.run(ParentRunner.java:309), 	at org.junit.runner.JUnitCore.run(JUnitCore.java:160), 	at org.junit.runner.JUnitCore.run(JUnitCore.java:138), 	at org.junit.runner.JUnitCore.run(JUnitCore.java:117), 	at org.junit.runner.JUnitCore.runMain(JUnitCore.java:96), 	at org.junit.runner.JUnitCore.runMainAndExit(JUnitCore.java:47), 	at org.junit.runner.JUnitCore.main(JUnitCore.java:40), , FAILURES!!!, Tests run: 4,  Failures: 2, ]
+[JUnit version 4.11, ..., Time: 129.261, , OK (3 tests), ]
+[JUnit version 4.11, ....., Time: 152.768, , OK (5 tests), ]
+[JUnit version 4.11, ..., Time: 85.096, , OK (3 tests), ]
+[JUnit version 4.11, .., Time: 9.421, , OK (2 tests), ]
+[JUnit version 4.11, ......., Time: 40.601, , OK (7 tests), ]
+[JUnit version 4.11, ..., Time: 24.069, , OK (3 tests), ]
+[JUnit version 4.11, ..., Time: 24.094, , OK (3 tests), ]
+[JUnit version 4.11, ...., Time: 137.105, , OK (4 tests), ]
+[JUnit version 4.11, ., Time: 26.704, , OK (1 test), ]
+[JUnit version 4.11, ., Time: 8.002, , OK (1 test), ]
+[JUnit version 4.11, ...., Time: 7.125, , OK (4 tests), ]
+[JUnit version 4.11, .., Time: 9.713, , OK (2 tests), ]
+[JUnit version 4.11, ...., Time: 35.017, , OK (4 tests), ]
+[JUnit version 4.11, ., Time: 8.713, , OK (1 test), ]
+[JUnit version 4.11, ., Time: 24.948, , OK (1 test), ]
+[JUnit version 4.11, ., Time: 1.262, , OK (1 test), ]
+[JUnit version 4.11, ....., Time: 14.039, , OK (5 tests), ]
+[JUnit version 4.11, ...., Time: 92.193, , OK (4 tests), ]
+[JUnit version 4.11, .........., Time: 118.191, , OK (10 tests), ]
+[JUnit version 4.11, ..., Time: 4.75, , OK (3 tests), ]
+[JUnit version 4.11, ............, Time: 138.484, , OK (12 tests), ]
+[JUnit version 4.11, ............, Time: 42.866, , OK (12 tests), ]
+[JUnit version 4.11, .., Time: 42.064, , OK (2 tests), ]
+[JUnit version 4.11, ........, Time: 45.795, , OK (8 tests), ]
+[JUnit version 4.11, ...., Time: 35.881, , OK (4 tests), ]
+[JUnit version 4.11, ., Time: 1.73, , OK (1 test), ]
+[JUnit version 4.11, ., Time: 1.583, , OK (1 test), ]
+[JUnit version 4.11, ., Time: 3.96, , OK (1 test), ]
+[JUnit version 4.11, ., Time: 1.781, , OK (1 test), ]
+[JUnit version 4.11, .., Time: 4.662, , OK (2 tests), ]
+[JUnit version 4.11, .., Time: 2.4, , OK (2 tests), ]
+[JUnit version 4.11, ., Time: 1.991, , OK (1 test), ]
+[JUnit version 4.11, .., Time: 8.684, , OK (2 tests), ]
+[JUnit version 4.11, ......, Time: 1.219, , OK (6 tests), ]
+[JUnit version 4.11, ...., Time: 42.016, , OK (4 tests), ]
+[JUnit version 4.11, ., Time: 84.874, , OK (1 test), ]
+
+file:///tmp/concordion/NGSPipeline_Table.html#WholeSystemValidation
+Successes: 39, Failures: 1
+
+file:///tmp/concordion/NGSPipeline_Table.html
+Successes: 39, Failures: 1
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
