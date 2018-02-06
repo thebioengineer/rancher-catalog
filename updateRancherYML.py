@@ -89,7 +89,7 @@ elif dockerCompose_uptodate == 0:
 		#	push the update
 		commit_Commands=[]
 		#commit_Commands.append('cd rancher-catalog')
-		commit_Commands.append('git add '+NewYMLdir+"/*)
+		commit_Commands.append('git add '+NewYMLdir+'/*')
 		commit_Commands.append('git commit -am "Updated Rancher config to include '+dockerImage+'"')
 		#commit_Commands.append('git push')
 		commit_Commands = ";".join(commit_Commands)
